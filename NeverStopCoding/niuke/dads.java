@@ -18,18 +18,18 @@ public class dads {
         data[0][0] = 1;
         data[n-1][n-1] = n * n;
  
-        //¸ù¾ÝÉßÐÎ¾ØÕóµÄÌØµã£¬·ÖÎªÉÏÏÂÁ½²¿·Ö£¬ÒÔÐ±ÏßÎªµ¥Î»¼ÆËãÊý¾Ý£¬´Ó1¿ªÊ¼±àºÅ
-        //±¾¾ØÕó½«´Ó×óÖÁÓÒÎª¿ªÊ¼
-        //Top:ÉÏ°ë²¿·Ö£¬¸ºÔð¶Ô½ÇÏß£¬Ð±ÏßÊýÎªk,1<=k<=(n-1),¶ÔÓÚ¾ØÕó½×Êýn²»Çø·ÖÆæÅ¼£¬kÇø·Ö
-        //Ã¿ÌõÐ±ÏßµÄ×îÐ¡Êý³ÉµÝÔöÊýÁÐ£¬ÒÔ1Îª¿ªÊ¼
+        //æ ¹æ®è›‡å½¢çŸ©é˜µçš„ç‰¹ç‚¹ï¼Œåˆ†ä¸ºä¸Šä¸‹ä¸¤éƒ¨åˆ†ï¼Œä»¥æ–œçº¿ä¸ºå•ä½è®¡ç®—æ•°æ®ï¼Œä»Ž1å¼€å§‹ç¼–å·
+        //æœ¬çŸ©é˜µå°†ä»Žå·¦è‡³å³ä¸ºå¼€å§‹
+        //Top:ä¸ŠåŠéƒ¨åˆ†ï¼Œè´Ÿè´£å¯¹è§’çº¿ï¼Œæ–œçº¿æ•°ä¸ºk,1<=k<=(n-1),å¯¹äºŽçŸ©é˜µé˜¶æ•°nä¸åŒºåˆ†å¥‡å¶ï¼ŒkåŒºåˆ†
+        //æ¯æ¡æ–œçº¿çš„æœ€å°æ•°æˆé€’å¢žæ•°åˆ—ï¼Œä»¥1ä¸ºå¼€å§‹
         for (int k = 1; k <= n-1; k++) {
-            if (k % 2 == 1) {  //µ±kÎªÆæÊýÊ±£¬Ã»ÌõÏßµÄ×îÐ¡ÊýÔÚÉÏ·½
+            if (k % 2 == 1) {  //å½“kä¸ºå¥‡æ•°æ—¶ï¼Œæ²¡æ¡çº¿çš„æœ€å°æ•°åœ¨ä¸Šæ–¹
                 data[0][k] = 1 + k * (k + 1)/2;
  
-                for (int i = 1; i <= k; i++) { //Ã¿ÌõÏßÐèÒª¼ÆËãkÌõÊý¾Ý
-                    data[i][k-i] = data[0][k] + i; //ÐÐÓëÁÐÖ®ºÍÎªk,´ÓÉÏÍùÏÂ¼ÆËã£¬ÁÐµÝ¼õ
+                for (int i = 1; i <= k; i++) { //æ¯æ¡çº¿éœ€è¦è®¡ç®—kæ¡æ•°æ®
+                    data[i][k-i] = data[0][k] + i; //è¡Œä¸Žåˆ—ä¹‹å’Œä¸ºk,ä»Žä¸Šå¾€ä¸‹è®¡ç®—ï¼Œåˆ—é€’å‡
                 }
-            } else {//µ±kÎªÅ¼ÊýÊ±£¬Ã»ÌõÏßµÄ×îÐ¡ÊýÔÚÏÂ·½
+            } else {//å½“kä¸ºå¶æ•°æ—¶ï¼Œæ²¡æ¡çº¿çš„æœ€å°æ•°åœ¨ä¸‹æ–¹
                 data[k][0] = 1 + k * (k + 1)/2;
  
                 for (int i = 1; i <= k; i++) {
@@ -38,34 +38,34 @@ public class dads {
             }
         }
  
-        //Down:ÉÏ°ë²¿·Ö£¬²»¸ºÔð¶Ô½ÇÏß£¬Ð±ÏßÊýÎªk,1<=k<=(n-2),¶ÔÓÚ¾ØÕó½×ÊýnÇø·ÖÆæÅ¼£¬kÒ²Çø·Ö
-        ////Ã¿ÌõÐ±ÏßµÄ×î´óÊý³ÉµÝ¼õÊýÁÐ£¬ÒÔn*nÎª¿ªÊ¼
-        if (n % 2 == 1) {//nÎªÆæÊý
+        //Down:ä¸ŠåŠéƒ¨åˆ†ï¼Œä¸è´Ÿè´£å¯¹è§’çº¿ï¼Œæ–œçº¿æ•°ä¸ºk,1<=k<=(n-2),å¯¹äºŽçŸ©é˜µé˜¶æ•°nåŒºåˆ†å¥‡å¶ï¼Œkä¹ŸåŒºåˆ†
+        ////æ¯æ¡æ–œçº¿çš„æœ€å¤§æ•°æˆé€’å‡æ•°åˆ—ï¼Œä»¥n*nä¸ºå¼€å§‹
+        if (n % 2 == 1) {//nä¸ºå¥‡æ•°
             for (int k = 1; k <= n - 2; k++) {
-                if (k % 2 == 0) { //Èç¹ûkÎªÅ¼Êý£¬×î´óÊýÔÚÏÂ·½
+                if (k % 2 == 0) { //å¦‚æžœkä¸ºå¶æ•°ï¼Œæœ€å¤§æ•°åœ¨ä¸‹æ–¹
                     data[k][n-1] = data[n-1][n-1] - (n - k - 1) * (n - k)/2;
-                    for (int i = 1; i < n - k; i++) { //´ÓÉÏÖÁÏÂ£¬ÒÀ´Î¼ÆËãn-1-kÌõÊý¾Ý
-                        data[i + k][n-1-i] = data[k][n-1] - i;  //ÐÐµÝÔö£¬ÁÐµÝ¼õ£¬ºÍÎªn+k-1
+                    for (int i = 1; i < n - k; i++) { //ä»Žä¸Šè‡³ä¸‹ï¼Œä¾æ¬¡è®¡ç®—n-1-kæ¡æ•°æ®
+                        data[i + k][n-1-i] = data[k][n-1] - i;  //è¡Œé€’å¢žï¼Œåˆ—é€’å‡ï¼Œå’Œä¸ºn+k-1
                     }
-                } else {//Èç¹ûkÎªÅ¼Êý£¬×î´óÊýÔÚÏÂ·½
+                } else {//å¦‚æžœkä¸ºå¶æ•°ï¼Œæœ€å¤§æ•°åœ¨ä¸‹æ–¹
                     data[n - 1][k] = data[n - 1][n - 1] - (n - k - 1) * (n - k) / 2;
-                    for (int i = 1; i < n - k; i++) { //´ÓÏÂÖÁÉÏ£¬ÒÀ´Î¼ÆËãn-1-kÌõÊý¾Ý
-                        data[n - 1 - i][i + k] = data[n - 1][k] - i;  //ÐÐµÝ¼õ£¬ÁÐµÝÔö£¬ºÍÎªn+k-1
+                    for (int i = 1; i < n - k; i++) { //ä»Žä¸‹è‡³ä¸Šï¼Œä¾æ¬¡è®¡ç®—n-1-kæ¡æ•°æ®
+                        data[n - 1 - i][i + k] = data[n - 1][k] - i;  //è¡Œé€’å‡ï¼Œåˆ—é€’å¢žï¼Œå’Œä¸ºn+k-1
                     }
                 }
             }
  
-        } else { //nÎªÆæÊý£¬ÕýºÃÓëÅ¼ÊýÇé¿öÏà·´
+        } else { //nä¸ºå¥‡æ•°ï¼Œæ­£å¥½ä¸Žå¶æ•°æƒ…å†µç›¸å
             for (int k = 1; k <= n - 2; k++) {
-                if (k % 2 == 1) { //Èç¹ûkÎªÆæÊý£¬×î´óÊýÔÚÏÂ·½
+                if (k % 2 == 1) { //å¦‚æžœkä¸ºå¥‡æ•°ï¼Œæœ€å¤§æ•°åœ¨ä¸‹æ–¹
                     data[n-1][k] = data[n-1][n-1] - (n - k - 1) * (n - k)/2;
-                    for (int i = 1; i < n - k; i++) { //´ÓÉÏÖÁÏÂ£¬ÒÀ´Î¼ÆËãn-1-kÌõÊý¾Ý
-                        data[n-1-i][i+k] = data[n-1][k] - i;  //ÐÐµÝ¼õ£¬ÁÐµÝÔö£¬ºÍÎªn+k-1
+                    for (int i = 1; i < n - k; i++) { //ä»Žä¸Šè‡³ä¸‹ï¼Œä¾æ¬¡è®¡ç®—n-1-kæ¡æ•°æ®
+                        data[n-1-i][i+k] = data[n-1][k] - i;  //è¡Œé€’å‡ï¼Œåˆ—é€’å¢žï¼Œå’Œä¸ºn+k-1
                     }
-                } else {//Èç¹ûkÎªÅ¼Êý£¬×î´óÊýÔÚÉÏ·½
+                } else {//å¦‚æžœkä¸ºå¶æ•°ï¼Œæœ€å¤§æ•°åœ¨ä¸Šæ–¹
                     data[k][n-1] = data[n - 1][n - 1] - (n - k - 1) * (n - k) / 2;
-                    for (int i = 1; i < n - k; i++) { //´ÓÏÂÖÁÉÏ£¬ÒÀ´Î¼ÆËãn-1-kÌõÊý¾Ý
-                        data[i+k][n-i-1] = data[k][n-1] - i;  //ÐÐµÝÔö£¬ÁÐµÝ¼õ£¬ºÍÎªn+k-1
+                    for (int i = 1; i < n - k; i++) { //ä»Žä¸‹è‡³ä¸Šï¼Œä¾æ¬¡è®¡ç®—n-1-kæ¡æ•°æ®
+                        data[i+k][n-i-1] = data[k][n-1] - i;  //è¡Œé€’å¢žï¼Œåˆ—é€’å‡ï¼Œå’Œä¸ºn+k-1
                     }
                 }
             }
@@ -83,7 +83,7 @@ public class dads {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
  
-        System.out.println("ÇëÊäÈëÒ»¸öÉßÐÎ¾ØÕóµÄ½×Êý£º");
+        System.out.println("è¯·è¾“å…¥ä¸€ä¸ªè›‡å½¢çŸ©é˜µçš„é˜¶æ•°ï¼š");
         dads sn = new dads(scan.nextInt());
         sn.print();
     }

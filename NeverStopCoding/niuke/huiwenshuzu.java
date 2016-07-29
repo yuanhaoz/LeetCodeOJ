@@ -4,29 +4,29 @@ import javax.swing.JOptionPane;
 
 
 /**
- * »ØÎÄÃèÊö£ºÕı×Å¶Á¹ıÈ¥ºÍµ¹×Å¶Á»ØÀ´µÄ×Ö·û´®ĞòÁĞÏàÍ¬ÔòÎª»ØÎÄ£¬Èç£º1h3gkg3h1ÊÇ»ØÎÄ
+ * å›æ–‡æè¿°ï¼šæ­£ç€è¯»è¿‡å»å’Œå€’ç€è¯»å›æ¥çš„å­—ç¬¦ä¸²åºåˆ—ç›¸åŒåˆ™ä¸ºå›æ–‡ï¼Œå¦‚ï¼š1h3gkg3h1æ˜¯å›æ–‡
  * @author tong
  *
  */
 public class huiwenshuzu {
     public static void main(String[] args) {
-     //¿ÉÒÔÊ¹ÓÃjavax.swing.JOptionPaneÀàÖĞµÄshowInputDialog()·½·¨ÌáÊ¾ÓÃ»§ÊäÈë×ÖÄ¸»òÕßÊı×Ö´®
-        String s = JOptionPane.showInputDialog("ÇëÊäÈëÊäÈë×Ö·û´®:");  
-        //µ÷ÓÃisPalindromeByBuffer()·½·¨
-        String output = s + (isPalindromeByBuffer(s)?"ÊÇ":"²»ÊÇ")+"»ØÎÄ¡£";
+     //å¯ä»¥ä½¿ç”¨javax.swing.JOptionPaneç±»ä¸­çš„showInputDialog()æ–¹æ³•æç¤ºç”¨æˆ·è¾“å…¥å­—æ¯æˆ–è€…æ•°å­—ä¸²
+        String s = JOptionPane.showInputDialog("è¯·è¾“å…¥è¾“å…¥å­—ç¬¦ä¸²:");  
+        //è°ƒç”¨isPalindromeByBuffer()æ–¹æ³•
+        String output = s + (isPalindromeByBuffer(s)?"æ˜¯":"ä¸æ˜¯")+"å›æ–‡ã€‚";
         JOptionPane.showMessageDialog(null, output);
         
-        s = JOptionPane.showInputDialog("ÇëÊäÈëÊäÈë×Ö·û´®:");
-        //µ÷ÓÃisPalindromeByCharAt()·½·¨
-        output = s + (isPalindromeByCharAt(s)?"ÊÇ":"²»ÊÇ")+"»ØÎÄ¡£";      
+        s = JOptionPane.showInputDialog("è¯·è¾“å…¥è¾“å…¥å­—ç¬¦ä¸²:");
+        //è°ƒç”¨isPalindromeByCharAt()æ–¹æ³•
+        output = s + (isPalindromeByCharAt(s)?"æ˜¯":"ä¸æ˜¯")+"å›æ–‡ã€‚";      
         JOptionPane.showMessageDialog(null, output);
         
-        //Ê¹ÓÃScanner(System.in)·½·¨ÌáÊ¾ÓÃ»§ÊäÈë×Ö·û´®
-  System.out.println("ÇëÊäÈëÊäÈë×Ö·û´®:");
+        //ä½¿ç”¨Scanner(System.in)æ–¹æ³•æç¤ºç”¨æˆ·è¾“å…¥å­—ç¬¦ä¸²
+  System.out.println("è¯·è¾“å…¥è¾“å…¥å­—ç¬¦ä¸²:");
   Scanner in=new Scanner(System.in);
   String strOrigin=in.next(); 
-  //µ÷ÓÃisPalindromeByCharAtSingle()·½·¨
-  System.out.print(strOrigin + (isPalindromeByCharAtSingle(s)?"ÊÇ":"²»ÊÇ")+"»ØÎÄ¡£");
+  //è°ƒç”¨isPalindromeByCharAtSingle()æ–¹æ³•
+  System.out.print(strOrigin + (isPalindromeByCharAtSingle(s)?"æ˜¯":"ä¸æ˜¯")+"å›æ–‡ã€‚");
 
  
 
@@ -34,47 +34,47 @@ public class huiwenshuzu {
     }
     
     /**
-    * Í¨¹ıµ÷ÓÃStringBufferµÄ¶ÔÏóµÄreverse()·½·¨£¬À´ÅĞ¶Ï·­×ªÇ°ºó×Ö·û´®ÊÇ·ñÏàµÈ£¬È·¶¨ÊÇ·ñÎª»ØÎÄ
+    * é€šè¿‡è°ƒç”¨StringBufferçš„å¯¹è±¡çš„reverse()æ–¹æ³•ï¼Œæ¥åˆ¤æ–­ç¿»è½¬å‰åå­—ç¬¦ä¸²æ˜¯å¦ç›¸ç­‰ï¼Œç¡®å®šæ˜¯å¦ä¸ºå›æ–‡
     * @param s
     * @return
     */
     public static boolean isPalindromeByBuffer(String s) {
         String strOrigin = filterLetterAndDigit(s);
-        //½«strOrigin×÷ÎªÊäÈë²ÎÊı£¬¹¹ÔìÒ»¸öStringBuffer¶ÔÏó
+        //å°†strOriginä½œä¸ºè¾“å…¥å‚æ•°ï¼Œæ„é€ ä¸€ä¸ªStringBufferå¯¹è±¡
         StringBuffer strBuf = new StringBuffer(strOrigin);
-        //µ÷ÓÃStringBuffer¶ÔÏó×Ô´øµÄreverse()·½·¨½øĞĞ×Ö·û´®·­×ª£¬×îºóµ÷ÓÃtoString()·µ»ØÒ»¸öStringÀàĞÍ×Ö·û´®
+        //è°ƒç”¨StringBufferå¯¹è±¡è‡ªå¸¦çš„reverse()æ–¹æ³•è¿›è¡Œå­—ç¬¦ä¸²ç¿»è½¬ï¼Œæœ€åè°ƒç”¨toString()è¿”å›ä¸€ä¸ªStringç±»å‹å­—ç¬¦ä¸²
         String strAfterReverse = strBuf.reverse().toString();  
-        //Í¨¹ıequals()·½·¨ÅĞ¶ÏÔ­À´µÄ×Ö·û´®ºÍ·­×ªºóµÄ×Ö·û´®ÊÇ·ñÏàµÈ£¬À´È·¶¨ÊÇ·ñÎª»ØÎÄ
+        //é€šè¿‡equals()æ–¹æ³•åˆ¤æ–­åŸæ¥çš„å­—ç¬¦ä¸²å’Œç¿»è½¬åçš„å­—ç¬¦ä¸²æ˜¯å¦ç›¸ç­‰ï¼Œæ¥ç¡®å®šæ˜¯å¦ä¸ºå›æ–‡
         return strOrigin.equals(strAfterReverse);
     }
     
     /**
-    * Í¨¹ı×Ö·û´®ÖĞµÄ¶Ô³ÆÎ»ÖÃ×Ö·û´®ÊÇ·ñÏàÍ¬À´ÅĞ¶ÏÊÇ·ñÎª»ØÎÄ,ÕâÀïÓÃÁËÁ½¸ö±äÁ¿lowºÍhighÀ´·Ö±ğ¶ÔÓ¦×Ö·û´®¶Ô³ÆÎ»ÖÃµÄindex
+    * é€šè¿‡å­—ç¬¦ä¸²ä¸­çš„å¯¹ç§°ä½ç½®å­—ç¬¦ä¸²æ˜¯å¦ç›¸åŒæ¥åˆ¤æ–­æ˜¯å¦ä¸ºå›æ–‡,è¿™é‡Œç”¨äº†ä¸¤ä¸ªå˜é‡lowå’Œhighæ¥åˆ†åˆ«å¯¹åº”å­—ç¬¦ä¸²å¯¹ç§°ä½ç½®çš„index
     * @param s
     * @return
     */
     public static boolean isPalindromeByCharAt(String s) {
-     //lowºÍhigh·Ö±ğ¶ÔÓ¦×Ö·û´®¶Ô³ÆÎ»ÖÃµÄindex£¬ÒÔ´ËÀ´ÅĞ¶ÏËùÓĞ¶Ô³ÆÎ»ÖÃ×Ö·ûÊÇ·ñÏàÍ¬
+     //lowå’Œhighåˆ†åˆ«å¯¹åº”å­—ç¬¦ä¸²å¯¹ç§°ä½ç½®çš„indexï¼Œä»¥æ­¤æ¥åˆ¤æ–­æ‰€æœ‰å¯¹ç§°ä½ç½®å­—ç¬¦æ˜¯å¦ç›¸åŒ
         int low = 0;
         int high = s.length() - 1;
         while (low < high) {
             if (s.charAt(low) != s.charAt(high))
-                return false;  // ²»ÊÇ»ØÎÄ
+                return false;  // ä¸æ˜¯å›æ–‡
             low++;
             high--;
         }
-        return true;          // ÊÇ»ØÎÄ
+        return true;          // æ˜¯å›æ–‡
     }
     
     /**
-    * Í¨¹ı×Ö·û´®ÖĞµÄ¶Ô³ÆÎ»ÖÃ×Ö·û´®ÊÇ·ñÏàÍ¬À´ÅĞ¶ÏÊÇ·ñÎª»ØÎÄ,ÕâÀïÓÃÁËÒ»¸ö±äÁ¿iÀ´¶ÔÓ¦×Ö·û´®¶Ô³ÆÎ»ÖÃµÄindex
+    * é€šè¿‡å­—ç¬¦ä¸²ä¸­çš„å¯¹ç§°ä½ç½®å­—ç¬¦ä¸²æ˜¯å¦ç›¸åŒæ¥åˆ¤æ–­æ˜¯å¦ä¸ºå›æ–‡,è¿™é‡Œç”¨äº†ä¸€ä¸ªå˜é‡iæ¥å¯¹åº”å­—ç¬¦ä¸²å¯¹ç§°ä½ç½®çš„index
     * @param s
     * @return
     */
     public static boolean isPalindromeByCharAtSingle(String s) {
-     //Í¨¹ı¶Ô³ÆÏÂ±êµÄ¹ØÏµÊ¹ÓÃÒ»¸ö±äÁ¿¼´¿ÉÅĞ¶ÏËùÓĞ¶Ô³ÆÎ»ÖÃ×Ö·ûÊÇ·ñÏàÍ¬
+     //é€šè¿‡å¯¹ç§°ä¸‹æ ‡çš„å…³ç³»ä½¿ç”¨ä¸€ä¸ªå˜é‡å³å¯åˆ¤æ–­æ‰€æœ‰å¯¹ç§°ä½ç½®å­—ç¬¦æ˜¯å¦ç›¸åŒ
      for(int i=0;i<s.length()/2;i++){
-      //Ö»ÓĞµ±Ç°Ò»°ë×Ö·û´®ºÍºóÒ»°ë×Ö·û´®¶ÔÓ¦Î»ÖÃÏàÍ¬£¬ÄÇÃ´²ÅÊÇ»ØÎÄ£¬Ö»ÓĞÓĞÒ»¸ö¶Ô³ÆÎ»ÖÃµÄ×Ö·û²»Í¬¾Í²»ÊÇ»ØÎÄ
+      //åªæœ‰å½“å‰ä¸€åŠå­—ç¬¦ä¸²å’Œåä¸€åŠå­—ç¬¦ä¸²å¯¹åº”ä½ç½®ç›¸åŒï¼Œé‚£ä¹ˆæ‰æ˜¯å›æ–‡ï¼Œåªæœ‰æœ‰ä¸€ä¸ªå¯¹ç§°ä½ç½®çš„å­—ç¬¦ä¸åŒå°±ä¸æ˜¯å›æ–‡
       if(s.charAt(i)!=s.charAt(s.length()-i-1)){
        return false;
       }
@@ -84,7 +84,7 @@ public class huiwenshuzu {
     }
     
     /**
-    * Í¨¹ıµ÷ÓÃCharacter.isLetterOrDigit(Char char)¹ıÂË×ÖÄ¸»òÕßÊı×Ö£¬ÅĞ¶Ï×ÖÄ¸»òÕßÊı×ÖµÄ×éºÏÊÇ·ñÎª»ØÎÄ
+    * é€šè¿‡è°ƒç”¨Character.isLetterOrDigit(Char char)è¿‡æ»¤å­—æ¯æˆ–è€…æ•°å­—ï¼Œåˆ¤æ–­å­—æ¯æˆ–è€…æ•°å­—çš„ç»„åˆæ˜¯å¦ä¸ºå›æ–‡
     * @param s
     * @return String
     */
@@ -92,11 +92,11 @@ public class huiwenshuzu {
         StringBuffer strBuf = new StringBuffer();
         for (int i = 0; i < s.length(); i++) {
             if (Character.isLetterOrDigit(s.charAt(i))) {
-             //µ÷ÓÃStringBufferµÄappend(Char char)·½·¨,½«ÊäÈëµÄ×ÖÄ¸»òÕßÊı×Ö¼ÓÈëÆäÖĞ
+             //è°ƒç”¨StringBufferçš„append(Char char)æ–¹æ³•,å°†è¾“å…¥çš„å­—æ¯æˆ–è€…æ•°å­—åŠ å…¥å…¶ä¸­
                 strBuf.append(s.charAt(i));
             }
         }
-        //·µ»ØStringÀàĞÍ£¬ĞèÒª½«StringBuffer×ª»»ÎªString£¬ĞèÒªµ÷ÓÃStringBuffer¶ÔÏóµÄtoString()·½·¨
+        //è¿”å›Stringç±»å‹ï¼Œéœ€è¦å°†StringBufferè½¬æ¢ä¸ºStringï¼Œéœ€è¦è°ƒç”¨StringBufferå¯¹è±¡çš„toString()æ–¹æ³•
         return strBuf.toString();
     }
     

@@ -1,11 +1,10 @@
 package niuke;
 import java.util.Scanner;
 /**
-* @ÎÄ¼şÃû³Æ :CycleMatrix.java
-* @¹¦ÄÜÃèÊö :
-*javaÊµÏÖÂİĞı¾ØÕó
-* @´´½¨Õß :ÔÆÊØ»¤    542335496@qq.com
- */
+* @æ–‡ä»¶åç§° :CycleMatrix.java
+* @åŠŸèƒ½æè¿° :javaå®ç°èºæ—‹çŸ©é˜µ
+* @åˆ›å»ºè€… :äº‘å®ˆæŠ¤    542335496@qq.com
+*/
 public class SpiralMatrix {	
 	static int length;
 	static int[][] snake;
@@ -20,7 +19,7 @@ public class SpiralMatrix {
 //			exe();
 //		}
 	}
-	public  static void exe(){
+	public static void exe(){
 		Scanner input=new Scanner(System.in);
 		System.out.println("input number:");
 		length=Integer.parseInt(input.nextLine());
