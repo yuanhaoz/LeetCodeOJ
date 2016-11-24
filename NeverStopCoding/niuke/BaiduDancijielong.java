@@ -37,7 +37,7 @@ public class BaiduDancijielong {
 	}
 	
 	public static void slove(){
-        Scanner sc=new Scanner(System.in);
+        sc = new Scanner(System.in);
         while(sc.hasNext()){
             int n=sc.nextInt();
             sc.nextLine();
@@ -59,6 +59,8 @@ public class BaiduDancijielong {
     }
 	
 	private static int count = 0;
+	private static Scanner sc;
+	private static Scanner in;
 	
 	public static void judge(){
 		ArrayList<String> in = getInput();
@@ -107,7 +109,7 @@ public class BaiduDancijielong {
 	 * @return
 	 */
 	public static ArrayList<String> getInput(){
-		Scanner in = new Scanner(System.in);
+		in = new Scanner(System.in);
 		int n = in.nextInt();
 		in.nextLine(); // 匹配换行符
 		ArrayList<String> input = new ArrayList<String>(n);

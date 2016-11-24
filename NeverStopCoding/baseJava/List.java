@@ -33,7 +33,7 @@ public class List {
 		for(int i = 0; i < al.size(); i++){
 			System.out.println(al.get(i));
 		}
-		Iterator it = al.iterator();
+		Iterator<String> it = al.iterator();
 		while(it.hasNext()){
 			System.out.println(it.next());
 		}

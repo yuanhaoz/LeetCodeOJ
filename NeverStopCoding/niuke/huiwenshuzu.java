@@ -9,7 +9,9 @@ import javax.swing.JOptionPane;
  *
  */
 public class huiwenshuzu {
-    public static void main(String[] args) {
+    private static Scanner in;
+
+	public static void main(String[] args) {
      //可以使用javax.swing.JOptionPane类中的showInputDialog()方法提示用户输入字母或者数字串
         String s = JOptionPane.showInputDialog("请输入输入字符串:");  
         //调用isPalindromeByBuffer()方法
@@ -23,7 +25,7 @@ public class huiwenshuzu {
         
         //使用Scanner(System.in)方法提示用户输入字符串
   System.out.println("请输入输入字符串:");
-  Scanner in=new Scanner(System.in);
+  in = new Scanner(System.in);
   String strOrigin=in.next(); 
   //调用isPalindromeByCharAtSingle()方法
   System.out.print(strOrigin + (isPalindromeByCharAtSingle(s)?"是":"不是")+"回文。");

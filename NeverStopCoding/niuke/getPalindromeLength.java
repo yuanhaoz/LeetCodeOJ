@@ -4,7 +4,10 @@ import java.util.Scanner;
  
 public class getPalindromeLength {
     
-    public static int getPalindromeLength(String str) {
+    private static Scanner sc;
+
+
+	public static int getPalindromeLength2(String str) {
         // 1.构造新的字符串
         // 为了避免奇数回文和偶数回文的不同处理问题，在原字符串中插入'#'，将所有回文变成奇数回文
         StringBuilder newStr = new StringBuilder();
@@ -54,14 +57,14 @@ public class getPalindromeLength {
     
     public static void main(String[] args) throws FileNotFoundException {
         int caseNum = 0;
-      Scanner sc = new Scanner(System.in);
+      sc = new Scanner(System.in);
         while (true) {
             String str = sc.nextLine();
             if (str.equals("END")) {
                 break;
             } else {
                 caseNum ++;
-                System.out.println("Case " + caseNum + ": " + getPalindromeLength(str));
+                System.out.println("Case " + caseNum + ": " + getPalindromeLength2(str));
             }
         }
     }

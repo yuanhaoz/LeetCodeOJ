@@ -27,6 +27,7 @@ public class BinarySearch {
 		// TODO Auto-generated method stub
 		int[] whitelist = {1,3,9,12,30,60,100};
 		Arrays.sort(whitelist);
+		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
 		while(in.hasNext()){
 			//读取键值，如果不存在于白名单中则将其打印

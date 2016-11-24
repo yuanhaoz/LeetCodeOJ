@@ -22,7 +22,7 @@ import java.util.Iterator;
 public class Set {
 
 	public static void testHashSet(){
-		HashSet set = new HashSet();
+		HashSet<String> set = new HashSet<String>();
 		String s1 = new String("hello");
 		String s2 = s1;
 		String s3 = new String("world");
@@ -30,7 +30,7 @@ public class Set {
 		set.add(s2);
 		set.add(s3);
 		System.out.println(set.size());
-		Iterator it = set.iterator();
+		Iterator<String> it = set.iterator();
 		while(it.hasNext()){
 			String str = it.next().toString();
 			System.out.println(str);

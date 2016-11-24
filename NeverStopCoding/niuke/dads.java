@@ -7,6 +7,7 @@ import java.util.*;
  */
 public class dads {
     private int n;
+	private static Scanner scan;
  
     public dads(int n) {
         this.n = n;
@@ -81,7 +82,7 @@ public class dads {
     }
  
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        scan = new Scanner(System.in);
  
         System.out.println("请输入一个蛇形矩阵的阶数：");
         dads sn = new dads(scan.nextInt());

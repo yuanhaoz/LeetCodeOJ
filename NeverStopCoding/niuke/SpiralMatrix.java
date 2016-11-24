@@ -9,6 +9,7 @@ public class SpiralMatrix {
 	static int length;
 	static int[][] snake;
 	static int value=1;
+	private static Scanner input;
 	static enum Direction{
 		Right,Down,Left,Up;
 	}
@@ -20,7 +21,7 @@ public class SpiralMatrix {
 //		}
 	}
 	public static void exe(){
-		Scanner input=new Scanner(System.in);
+		input = new Scanner(System.in);
 		System.out.println("input number:");
 		length=Integer.parseInt(input.nextLine());
 		snake=new int[length][length];

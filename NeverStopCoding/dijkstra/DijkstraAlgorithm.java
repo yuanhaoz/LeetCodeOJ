@@ -15,61 +15,59 @@ import dijkstra.Vertex;
 
 public class DijkstraAlgorithm {
 
-	private final List<Vertex> nodes;
 	private final List<Edge> edges;
 	private Set<Vertex> settledNodes;
 	private Set<Vertex> unSettledNodes;
-	private Map<Vertex, Vertex> predecessors;// ÓÃÀ´¼ÇÂ¼×î¶ÌÂ·¾¶µÄ½ÚµãÐÅÏ¢£¬mapÊµÏÖ
-	private Map<Vertex, Integer> distance;// ÓÃÀ´¼ÇÂ¼Ã¿¸ö¶¥µã¶ÔÓ¦µÄ×î¶ÌÂ·¾¶³¤¶È
+	private Map<Vertex, Vertex> predecessors;// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½Ä½Úµï¿½ï¿½ï¿½Ï¢ï¿½ï¿½mapÊµï¿½ï¿½
+	private Map<Vertex, Integer> distance;// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 	public DijkstraAlgorithm(Graph graph) {
-		// create a copy of the array so that we can operate on this array
-		this.nodes = new ArrayList<Vertex>(graph.getVertexes());
+		new ArrayList<Vertex>(graph.getVertexes());
 		this.edges = new ArrayList<Edge>(graph.getEdges());
 	}
 
-	// ±ØÐë¾­¹ýÖ¸¶¨µÄ½ÚµãdemandNodes£¬°´ÕÕÌâÄ¿ÒªÇó
+	// ï¿½ï¿½ï¿½ë¾­ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½Ä½Úµï¿½demandNodesï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Òªï¿½ï¿½
 	public void execute(Vertex source, List<Vertex> demandNodes) {
 		settledNodes = new HashSet<Vertex>();
 		unSettledNodes = new HashSet<Vertex>();
 		distance = new HashMap<Vertex, Integer>();
 		predecessors = new HashMap<Vertex, Vertex>();
-		distance.put(source, 0);// ´ÓÔ´½Úµã¿ªÊ¼
+		distance.put(source, 0);// ï¿½ï¿½Ô´ï¿½Úµã¿ªÊ¼
 		unSettledNodes.add(source);
 		while (unSettledNodes.size() > 0) {
-			Vertex node = getMinimum(unSettledNodes);// µÃµ½¾àÀë×îÐ¡µÄ¶¥µã
-			settledNodes.add(node);// Ìí¼Ó¸Ã½ÚµãÎª´¦Àí¹ýµÄ½Úµã
-			unSettledNodes.remove(node);// ´ÓÎ´´¦ÀíµÄ½Úµã¼¯ÖÐÈ¥³ý¸Ã½Úµã
-			findMinimalDistances(node, demandNodes);// ÕÒ³ö¸Ã½ÚµãÁÚ¾Ó½ÚµãµÄ×îÐ¡¾àÀë½Úµã
+			Vertex node = getMinimum(unSettledNodes);// ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½Ä¶ï¿½ï¿½ï¿½
+			settledNodes.add(node);// ï¿½ï¿½Ó¸Ã½Úµï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä½Úµï¿½
+			unSettledNodes.remove(node);// ï¿½ï¿½Î´ï¿½ï¿½ï¿½ï¿½Ä½Úµã¼¯ï¿½ï¿½È¥ï¿½ï¿½ï¿½Ã½Úµï¿½
+			findMinimalDistances(node, demandNodes);// ï¿½Ò³ï¿½ï¿½Ã½Úµï¿½ï¿½Ú¾Ó½Úµï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½Úµï¿½
 		}
 	}
 	
-	// ±ØÐë¾­¹ýÖ¸¶¨µÄ½ÚµãdemandNodes£¬°´ÕÕÌâÄ¿ÒªÇó
+	// ï¿½ï¿½ï¿½ë¾­ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½Ä½Úµï¿½demandNodesï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Òªï¿½ï¿½
 	private void findMinimalDistances(Vertex node, List<Vertex> demandNodes) {
 		List<Vertex> adjacentNodes = getNeighbors(node, demandNodes);
 		for (Vertex target : adjacentNodes) {
 			if (getShortestDistance(target) > getShortestDistance(node) + getDistance(node, target)) {
 				distance.put(target, getShortestDistance(node) + getDistance(node, target));
-				predecessors.put(target, node);// ¼ÇÂ¼×î¶Ì¾àÀëÂ·¾¶
-				unSettledNodes.add(target);// Ìí¼ÓÎ´´¦Àí½ÚµãÐÅÏ¢
+				predecessors.put(target, node);// ï¿½ï¿½Â¼ï¿½ï¿½Ì¾ï¿½ï¿½ï¿½Â·ï¿½ï¿½
+				unSettledNodes.add(target);// ï¿½ï¿½ï¿½Î´ï¿½ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½Ï¢
 			}
 		}
 
 	}
 	
-	// ±ØÐë¾­¹ýÖ¸¶¨µÄ½ÚµãdemandNodes£¬°´ÕÕÌâÄ¿ÒªÇó
+	// ï¿½ï¿½ï¿½ë¾­ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½Ä½Úµï¿½demandNodesï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Òªï¿½ï¿½
 	private List<Vertex> getNeighbors(Vertex node, List<Vertex> demandNodes) {
 		List<Vertex> neighbors = new ArrayList<Vertex>();
 		
-		// ±È½ÏÖ¸¶¨µÄÁÚ¾Ó½Úµã£¬Èç¹û´æÔÚÖ¸¶¨½Úµã£¬Ôò²»ÐèÒªÅÐ¶Ï±ðµÄÁÚ¾Ó½Úµã
+		// ï¿½È½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½Ú¾Ó½Úµã£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½Úµã£¬ï¿½ï¿½ï¿½ï¿½Òªï¿½Ð¶Ï±ï¿½ï¿½ï¿½Ú¾Ó½Úµï¿½
 		for (Edge edge : edges) {
 			if (edge.getSource().equals(node) && !isSettled(edge.getDestination())) {
-				// ±È½ÏÊÇ·ñ´æÔÚÁÚ¾Ó½ÚµãÎªÖ¸¶¨µÄ½Úµã£¨¿ÉÄÜÎª¶à¸ö£©£¬Èç¹û´æÔÚ£¬Ôò½«ÕâÐ©½Úµã¼ÓÈëºòÑ¡¼¯£¬²»Ñ¡ÔñÆäËû½Úµã
+				// ï¿½È½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½Ú¾Ó½Úµï¿½ÎªÖ¸ï¿½ï¿½ï¿½Ä½Úµã£¨ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ï¿½ï¿½ï¿½ï¿½Ð©ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½
 				for(int i = 0; i < demandNodes.size(); i++){
 					Vertex demandNode = demandNodes.get(i);
 					if(edge.getDestination().equals(demandNode)){
 						neighbors.add(edge.getDestination());
-						System.out.println("´æÔÚÖ¸¶¨µÄÁÚ¾Ó½Úµã£º" + edge.getDestination());
+						System.out.println("ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½Ú¾Ó½Úµã£º" + edge.getDestination());
 					} else {
 						
 					}
@@ -77,7 +75,7 @@ public class DijkstraAlgorithm {
 			}
 		}
 		
-		// ÅÐ¶ÏÊÇ·ñ´æÔÚÂú×ãÐèÇóÖ¸¶¨µÄÁÚ¾Ó½Úµã£¬ÈôÓÐ£¬Ôò²»ÐèÒª±ðµÄÁÚ¾Ó½Úµã£¬ÈôÎÞ£¬Ôò¼ÓÉÏËüµÄËùÓÐÁÚ¾Ó½Úµã
+		// ï¿½Ð¶ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½Ú¾Ó½Úµã£¬ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½Ú¾Ó½Úµã£¬ï¿½ï¿½ï¿½Þ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¾Ó½Úµï¿½
 		if(neighbors.size() == 0){
 			for (Edge edge : edges) {
 				if (edge.getSource().equals(node) && !isSettled(edge.getDestination())) {
@@ -94,13 +92,13 @@ public class DijkstraAlgorithm {
 		unSettledNodes = new HashSet<Vertex>();
 		distance = new HashMap<Vertex, Integer>();
 		predecessors = new HashMap<Vertex, Vertex>();
-		distance.put(source, 0);// ´ÓÔ´½Úµã¿ªÊ¼
+		distance.put(source, 0);// ï¿½ï¿½Ô´ï¿½Úµã¿ªÊ¼
 		unSettledNodes.add(source);
 		while (unSettledNodes.size() > 0) {
-			Vertex node = getMinimum(unSettledNodes);// µÃµ½¾àÀë×îÐ¡µÄ¶¥µã
-			settledNodes.add(node);// Ìí¼Ó¸Ã½ÚµãÎª´¦Àí¹ýµÄ½Úµã
-			unSettledNodes.remove(node);// ´ÓÎ´´¦ÀíµÄ½Úµã¼¯ÖÐÈ¥³ý¸Ã½Úµã
-			findMinimalDistances(node);// ÕÒ³ö¸Ã½ÚµãÁÚ¾Ó½ÚµãµÄ×îÐ¡¾àÀë½Úµã
+			Vertex node = getMinimum(unSettledNodes);// ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½Ä¶ï¿½ï¿½ï¿½
+			settledNodes.add(node);// ï¿½ï¿½Ó¸Ã½Úµï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä½Úµï¿½
+			unSettledNodes.remove(node);// ï¿½ï¿½Î´ï¿½ï¿½ï¿½ï¿½Ä½Úµã¼¯ï¿½ï¿½È¥ï¿½ï¿½ï¿½Ã½Úµï¿½
+			findMinimalDistances(node);// ï¿½Ò³ï¿½ï¿½Ã½Úµï¿½ï¿½Ú¾Ó½Úµï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½Úµï¿½
 		}
 	}
 
@@ -109,8 +107,8 @@ public class DijkstraAlgorithm {
 		for (Vertex target : adjacentNodes) {
 			if (getShortestDistance(target) > getShortestDistance(node) + getDistance(node, target)) {
 				distance.put(target, getShortestDistance(node) + getDistance(node, target));
-				predecessors.put(target, node);// ¼ÇÂ¼×î¶Ì¾àÀëÂ·¾¶
-				unSettledNodes.add(target);// Ìí¼ÓÎ´´¦Àí½ÚµãÐÅÏ¢
+				predecessors.put(target, node);// ï¿½ï¿½Â¼ï¿½ï¿½Ì¾ï¿½ï¿½ï¿½Â·ï¿½ï¿½
+				unSettledNodes.add(target);// ï¿½ï¿½ï¿½Î´ï¿½ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½Ï¢
 			}
 		}
 
@@ -166,7 +164,7 @@ public class DijkstraAlgorithm {
 	/*
 	 * This method returns the path from the source to the selected target and
 	 * NULL if no path exists
-	 * µÃµ½´Ó Ô­Ê¼½Úµã µ½ Ñ¡¶¨Ä¿±ê½Úµã µÄ×î¶ÌÂ·¾¶£¬Èç¹ûÃ»ÓÐ£¬·µ»ØNULL
+	 * ï¿½Ãµï¿½ï¿½ï¿½ Ô­Ê¼ï¿½Úµï¿½ ï¿½ï¿½ Ñ¡ï¿½ï¿½Ä¿ï¿½ï¿½Úµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½NULL
 	 */
 	public LinkedList<Vertex> getPath(Vertex target) {
 		LinkedList<Vertex> path = new LinkedList<Vertex>();

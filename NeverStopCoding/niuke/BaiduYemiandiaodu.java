@@ -5,10 +5,12 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 public class BaiduYemiandiaodu {
-    public static void main(String args[]) {
+    private static Scanner scan;
+
+	public static void main(String args[]) {
         int cacheNum;
         int pageNum;
-        Scanner scan = new Scanner(System.in);
+        scan = new Scanner(System.in);
         while(scan.hasNext()){
         	cacheNum = scan.nextInt();
             pageNum = scan.nextInt();
