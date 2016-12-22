@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * @author zhengtaishuai
- *
- */
-package easy;

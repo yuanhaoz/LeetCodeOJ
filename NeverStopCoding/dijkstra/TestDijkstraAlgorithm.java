@@ -1,18 +1,13 @@
 package dijkstra;
 
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
 import org.junit.Test;
-
-import dijkstra.DijkstraAlgorithm;
-import dijkstra.Edge;
-import dijkstra.Graph;
-import dijkstra.Vertex;
-
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
 
 public class TestDijkstraAlgorithm {
 
@@ -63,17 +58,17 @@ public class TestDijkstraAlgorithm {
 		demandNodes = new ArrayList<Vertex>();
 		edges = new ArrayList<Edge>();
 		
-		// ¶¥µã¼¯ºÏ£º4¸ö½Úµã£¨0-3£©
+		// ï¿½ï¿½ï¿½ã¼¯ï¿½Ï£ï¿½4ï¿½ï¿½ï¿½Úµã£¨0-3ï¿½ï¿½
 		for (int i = 0; i < 4; i++) {
 			Vertex location = new Vertex("Node_" + i, "Node_" + i);
 			nodes.add(location);
 		}
 		
-		// ÐèÇó¶¥µã¼¯ºÏ£º½Úµã2ºÍ3
+		// ï¿½ï¿½ï¿½ó¶¥µã¼¯ï¿½Ï£ï¿½ï¿½Úµï¿½2ï¿½ï¿½3
 		demandNodes.add(new Vertex("Node_2", "Node_2"));
 		demandNodes.add(new Vertex("Node_3", "Node_3"));
 		
-		// ±ß¼¯ºÏ£º6Ìõ±ß
+		// ï¿½ß¼ï¿½ï¿½Ï£ï¿½6ï¿½ï¿½ï¿½ï¿½
 		addLane("Edge_0", 0, 1, 1);
 		addLane("Edge_1", 0, 2, 2);
 		addLane("Edge_2", 0, 3, 1);
@@ -103,13 +98,13 @@ public class TestDijkstraAlgorithm {
 		demandNodes = new ArrayList<Vertex>();
 		edges = new ArrayList<Edge>();
 		
-		// ¶¥µã¼¯ºÏ£º20¸ö½Úµã£¨0-19£©
+		// ï¿½ï¿½ï¿½ã¼¯ï¿½Ï£ï¿½20ï¿½ï¿½ï¿½Úµã£¨0-19ï¿½ï¿½
 		for (int i = 0; i < 20; i++) {
 			Vertex location = new Vertex("Node_" + i, "Node_" + i);
 			nodes.add(location);
 		}
 		
-		// ÐèÇó¶¥µã¼¯ºÏ£º½Úµã2ºÍ3
+		// ï¿½ï¿½ï¿½ó¶¥µã¼¯ï¿½Ï£ï¿½ï¿½Úµï¿½2ï¿½ï¿½3
 		demandNodes.add(new Vertex("Node_3", "Node_3"));
 		demandNodes.add(new Vertex("Node_5", "Node_5"));
 		demandNodes.add(new Vertex("Node_7", "Node_7"));
@@ -117,7 +112,7 @@ public class TestDijkstraAlgorithm {
 		demandNodes.add(new Vertex("Node_13", "Node_13"));
 		demandNodes.add(new Vertex("Node_17", "Node_17"));
 		
-		// 45Ìõ±ß
+		// 45ï¿½ï¿½ï¿½ï¿½
 		addLane("Edge_0", 0, 13, 15);
 		addLane("Edge_1", 0, 8, 17);
 		addLane("Edge_2", 0, 19, 1);
@@ -185,13 +180,13 @@ public class TestDijkstraAlgorithm {
 		demandNodes = new ArrayList<Vertex>();
 		edges = new ArrayList<Edge>();
 		
-		// ¶¥µã¼¯ºÏ£º20¸ö½Úµã£¨0-19£©
+		// ï¿½ï¿½ï¿½ã¼¯ï¿½Ï£ï¿½20ï¿½ï¿½ï¿½Úµã£¨0-19ï¿½ï¿½
 		for (int i = 0; i < 20; i++) {
 			Vertex location = new Vertex("Node_" + i, "Node_" + i);
 			nodes.add(location);
 		}
 		
-		// 45Ìõ±ß
+		// 45ï¿½ï¿½ï¿½ï¿½
 		addLane("Edge_0", 0, 13, 15);
 		addLane("Edge_1", 0, 8, 17);
 		addLane("Edge_2", 0, 19, 1);
