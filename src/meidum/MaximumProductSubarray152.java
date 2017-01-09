@@ -29,7 +29,6 @@ public class MaximumProductSubarray152 {
 		int[] nums = {-4,-3,-2};
 //		maxProduct(nums, 1, 3);
 		System.out.println(maxProduct3(nums));
-		System.out.println(maxProduct4(nums));
 	}
 	
 	/**
@@ -42,23 +41,6 @@ public class MaximumProductSubarray152 {
 	 * @return
 	 */
 	public static int maxProduct3(int[] nums) {
-	    if (nums.length == 0) {
-	        return 0;
-	    }
-	    
-	    int maxlocal = nums[0]; // 局部最大值
-	    int minlocal = nums[0]; // 局部最小值
-	    int maxGlobal = nums[0]; // 全局最大值
-	    
-	    for (int i = 1; i < nums.length; i++) {
-	        maxlocal = Math.max(Math.max(maxlocal * nums[i], minlocal * nums[i]), nums[i]); // 三个数中的最大值，更新局部最大值
-	        minlocal = Math.min(Math.min(maxlocal * nums[i], minlocal * nums[i]), nums[i]); // 三个数中的最小值，更新局部最小值
-	        maxGlobal = Math.max(maxlocal, maxGlobal); // 更新全局最大值
-	    }
-	    return maxGlobal;
-	}
-	
-	public static int maxProduct4(int[] nums) {
 	    if (nums.length == 0) {
 	        return 0;
 	    }

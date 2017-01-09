@@ -31,6 +31,12 @@ public class SearchforaRange34 {
 //		searchRange2(nums, target);
 	}
 	
+	/**
+	 * 两次二分搜索，第一次搜索出最小的那个数，第二次搜索出最大的数
+	 * @param nums
+	 * @param target
+	 * @return
+	 */
 	public static int[] searchRange(int[] nums, int target) {
 		int[] result = {-1, -1};
 		if (nums.length == 0) {

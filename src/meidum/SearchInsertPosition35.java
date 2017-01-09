@@ -5,6 +5,7 @@ Total Accepted: 137698
 Total Submissions: 353904
 Difficulty: Medium
 Contributors: Admin
+
 Given a sorted array and a target value, return the index if the target is found. 
 If not, return the index where it would be if it were inserted in order.
 
@@ -22,11 +23,23 @@ Here are few examples.
 public class SearchInsertPosition35 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		int[] nums = {1,3,5,6};
+		int target = 8;
+		System.out.println(searchInsert(nums, target));
 	}
 	
+	/**
+	 * 二分查找
+	 * 元素大于最大的元素或者小于最小的元素都往数组的两个边界放
+	 * 数的下标为>=该数的下标
+	 * @param nums
+	 * @param target
+	 * @return
+	 */
 	public static int searchInsert(int[] nums, int target) {
+		if (nums.length == 0) {
+			return 0;
+		}
         if (target <= nums[0]) {
 			return 0;
 		}
@@ -36,14 +49,18 @@ public class SearchInsertPosition35 {
         if (target > nums[nums.length - 1]) {
 			return nums.length;
 		}
-		
-		for (int i = 0; i < nums.length; i++) {
-			
+		int l = 0, r = nums.length - 1;
+		while (l < r) {
+			int m = (l + r) / 2;
+			if (nums[m] == target) {
+				return m;
+			} else if (nums[m] < target) {
+				l = m + 1;
+			} else {
+				r = m;
+			}
 		}
-		
-		
-		
-		return 0;
+		return l;
     }
 
 }
