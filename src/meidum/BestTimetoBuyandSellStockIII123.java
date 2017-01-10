@@ -38,57 +38,15 @@ public class BestTimetoBuyandSellStockIII123 {
 	}
 	
 	public static int maxProfit(int[] prices) {
-		if (prices.length == 0 || prices.length == 1) {
-			return 0;
-		}
-		int[] minus = new int[prices.length - 1];
-        for (int i = 0; i < prices.length - 1; i++) {
-			minus[i] = prices[i + 1] - prices[i];
-		}
-        List<Integer> index = new ArrayList<Integer>();
-        List<Integer> indexFu = new ArrayList<Integer>();
-        for (int i = 0; i < minus.length; i++) {
-			if (minus[i] > 0) {
-				index.add(i);
-			} else {
-				indexFu.add(i);
-			}
-		}
-        Log.log("index: " + index);
-        for (int i = 0; i < minus.length; i++) {
-			System.out.print(minus[i] + " ");
-		}
-        System.out.println();
-        
-        if (index.size() == 0) {
-			return 0;
-		}
-        if (index.size() == 1) {
-			return minus[index.get(0)];
-		}
-        
-        List<Integer> value = new ArrayList<Integer>();
-        int i = 0;
-        while(i < minus.length) {
-        	int j = i + 1;
-        	while (j < index.size() && index.get(j) - a == 1) {
-        		
-			}
-		}
-        Log.log("value: " + value);
-        if (value.size() == 0) {
-			return 0;
-		}
-        if (value.size() == 1) {
-			return value.get(0);
-		}
-        int big = Integer.MIN_VALUE;
-        for (int j = 0; j < value.size()-1; j++) {
-        	for (int j2 = j+1; j2 < value.size(); j2++) {
-        		big= Math.max(big, value.get(j)+value.get(j2));
-			}
-		}
-        return big;
+		int hold1 = Integer.MIN_VALUE, hold2 = Integer.MIN_VALUE;
+        int release1 = 0, release2 = 0;
+        for(int i:prices){                              // Assume we only have 0 money at first
+            release2 = Math.max(release2, hold2+i);     // The maximum if we've just sold 2nd stock so far.
+            hold2    = Math.max(hold2,    release1-i);  // The maximum if we've just buy  2nd stock so far.
+            release1 = Math.max(release1, hold1+i);     // The maximum if we've just sold 1nd stock so far.
+            hold1    = Math.max(hold1,    -i);          // The maximum if we've just buy  1st stock so far. 
+        }
+        return release2; ///Since release1 is initiated as 0, so release2 will always higher than release1.
     }
 	
 	public static int maxProfit2(int[] prices) {
