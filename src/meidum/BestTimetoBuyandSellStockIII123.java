@@ -37,7 +37,44 @@ public class BestTimetoBuyandSellStockIII123 {
 		Log.log("prices: " + maxProfit(prices));
 	}
 	
+	/**
+	 * 动态规划1：
+	 * First assume that we have no money, so buy1 means that we have to borrow money from others, 
+	 * we want to borrow less so that we have to make our balance as max as we can(because this is negative).
+	 * 假设我们一开始米有钱，所以buy1表示我们借的钱，我们想去借尽量少的钱使得我们的利润最大（借1元比借5元好，一开始是负值）
+	 * 
+	 * sell1 means we decide to sell the stock, after selling it we have price[i] money and we have to give back 
+	 * the money we owed, so we have price[i] - |buy1| = prices[i ] + buy1, we want to make this max.
+	 * sell1是指我们决定卖掉股票，卖了以后我们有prices[i]的钱，再加上之前的buy1，就是减去上一步需要还的钱，得到我们的利润，使得利润最大。
+	 * 
+	 * buy2 means we want to buy another stock, we already have sell1 money, so after buying stock2 we have 
+	 * buy2 = sell1 - price[i] money left, we want more money left, so we make it max.
+	 * buy2表示我们又想买另外一只股票，我们已经有sell1的钱，因此在买完第二支股票的时候我们还剩余sell1-prices[i]的钱，我们需要更多的钱剩余，因此希望buy2很大。
+	 * 
+	 * sell2 means we want to sell stock2, we can have price[i] money after selling it, and we have buy2 money 
+	 * left before, so sell2 = buy2 + prices[i], we make this max.
+     * So sell2 is the most money we can have.
+     * sell2意味着我们想卖掉第二支股票，我们可以获得price[i]的钱，我们之前有buy2的钱剩余，所以我们要使得sell2的利润最大。
+	 * @param prices
+	 * @return
+	 */
 	public static int maxProfit(int[] prices) {
+		int sell1 = 0, sell2 = 0, buy1 = Integer.MIN_VALUE, buy2 = Integer.MIN_VALUE;
+		for (int i = 0; i < prices.length; i++) {
+			buy1 = Math.max(buy1, -prices[i]);
+			sell1 = Math.max(sell1, buy1 + prices[i]);
+			buy2 = Math.max(buy2, sell1 - prices[i]);
+			sell2 = Math.max(sell2, buy2 + prices[i]);
+		}
+		return sell2;
+	}
+	
+	/**
+	 * 动态规划2
+	 * @param prices
+	 * @return
+	 */
+	public static int maxProfit3(int[] prices) {
 		int hold1 = Integer.MIN_VALUE, hold2 = Integer.MIN_VALUE;
         int release1 = 0, release2 = 0;
         for(int i:prices){                              // Assume we only have 0 money at first
@@ -49,6 +86,11 @@ public class BestTimetoBuyandSellStockIII123 {
         return release2; ///Since release1 is initiated as 0, so release2 will always higher than release1.
     }
 	
+	/**
+	 * 自己没有写出来
+	 * @param prices
+	 * @return
+	 */
 	public static int maxProfit2(int[] prices) {
 		if (prices.length == 0 || prices.length == 1) {
 			return 0;
