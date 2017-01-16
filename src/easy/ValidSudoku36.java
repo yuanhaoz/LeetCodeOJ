@@ -30,7 +30,37 @@ public class ValidSudoku36 {
 
 	}
 	
+	/**
+	 * Three flags are used to check whether a number appear.
+	 * used1: check each row
+	 * used2: check each column
+	 * used3: check each sub-boxes
+	 * @param board
+	 * @return
+	 */
 	public static boolean isValidSudoku(char[][] board) {
+		for (int i = 0; i < 9; i++) {
+			HashSet<Character> rowSet = new HashSet<Character>();
+			HashSet<Character> columnSet = new HashSet<Character>();
+			HashSet<Character> cubeSet = new HashSet<Character>();
+			for (int j = 0; j < 9; j++) {
+				if (board[i][j] != '.' && !rowSet.add(board[i][j])) {
+					return false;
+				} else if (board[j][i] != '.' && !columnSet.add(board[j][i])) {
+					return false;
+				}
+				int rowIndex = 3 * (i / 3);
+				int columnIndex = 3 * (i % 3);
+				if (board[rowIndex + j/3][columnIndex + j%3] != '.' && !cubeSet.add(board[rowIndex + j/3][columnIndex + j%3])) {
+					return false;
+				}
+			}
+		}
+		return true;
+	}
+	
+	
+	public static boolean isValidSudoku2(char[][] board) {
 		
 		HashSet<Character> set = new HashSet<Character>();
 		for (int i = 0; i < 3; i++) {
