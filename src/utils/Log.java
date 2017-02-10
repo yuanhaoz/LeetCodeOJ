@@ -29,5 +29,13 @@ public class Log {
 		}
 	}
 	
+	public static void logTwoList(List<List<Integer>> list){
+		for (int i = 0; i < list.size(); i++) {
+			log("list " + (i+1));
+			for (int j = 0; j < list.get(i).size(); j++) {
+				log(list.get(i).get(j));
+			}
+		}
+	}
 	
 }
