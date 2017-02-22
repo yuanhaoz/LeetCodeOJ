@@ -1,5 +1,6 @@
 package utils;
 
+import java.util.Arrays;
 import java.util.List;
 
 /**  
@@ -36,6 +37,10 @@ public class Log {
 				log(list.get(i).get(j));
 			}
 		}
+	}
+	
+	public static void logTwoArrays(Object[][] array){
+		System.out.println(Arrays.deepToString(array));
 	}
 	
 }
