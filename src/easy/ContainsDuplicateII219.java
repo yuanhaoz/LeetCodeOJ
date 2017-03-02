@@ -26,6 +26,13 @@ public class ContainsDuplicateII219 {
 		System.out.println(containsNearbyDuplicate2(nums, 7));
 	}
 	
+	/**
+	 * 使用 HashMap 保存并判断，key为数组元素的值，value为对应的数组下标
+	 * 判断key相同的两个value之间的差和k的区别
+	 * @param nums
+	 * @param k
+	 * @return
+	 */
 	public static boolean containsNearbyDuplicate(int[] nums, int k) {
         Map<Integer, Integer> map = new HashMap<Integer, Integer>();
         for (int i = 0; i < nums.length; i++) {

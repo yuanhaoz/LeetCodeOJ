@@ -22,8 +22,10 @@ For example:
 Secret number:  "1807"
 Friend's guess: "7810"
 Hint: 1 bull and 3 cows. (The bull is 8, the cows are 0, 1 and 7.)
+
 Write a function to return a hint according to the secret number and friend's guess, 
-use A to indicate the bulls and B to indicate the cows. In the above example, your function should return "1A3B".
+use A to indicate the bulls and B to indicate the cows. 
+In the above example, your function should return "1A3B".
 
 Please note that both secret number and friend's guess may contain duplicate digits, for example:
 
@@ -41,14 +43,22 @@ public class BullsandCows299 {
 		System.out.println(getHint("1807", "7810"));
 		System.out.println(getHint("1123", "0111"));
 		System.out.println(getHint("1122", "2211"));
+		System.out.println(getHint("1123", "4213"));
+		System.out.println(getHint("11222", "22011"));
 	}
 	
+	/**
+	 * 两次遍历secret字符串，第一次比较每个位置上的值，得到相同元素的个数。第二次比较猜对的数字但是出现位置不同的数。
+	 * @param secret
+	 * @param guess
+	 * @return
+	 */
 	public static String getHint(String secret, String guess) {
 		int n = secret.length();
 		int a = 0, b = 0;
 		List<Character> secretList = new ArrayList<Character>();
 		List<Character> guessList = new ArrayList<Character>();
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) { // 第一次比较每个位置上的值，得到猜元素的个数
 			if (secret.charAt(i) == guess.charAt(i)) {
 				a++;
 			} else {
@@ -56,7 +66,7 @@ public class BullsandCows299 {
 				guessList.add(guess.charAt(i));
 			}
 		}
-        for (int i = 0; i < secretList.size(); i++) {
+        for (int i = 0; i < secretList.size(); i++) { // 第二次遍历secretList，得到猜对的数字但是位置不同的数
 			if (guessList.contains(secretList.get(i))) {
 				b++;
 				guessList.remove(secretList.get(i));

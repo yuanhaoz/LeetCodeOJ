@@ -9,6 +9,7 @@ Total Accepted: 66423
 Total Submissions: 145817
 Difficulty: Easy
 Contributors: Admin
+
 Given two arrays, write a function to compute their intersection.
 
 Example:
@@ -31,6 +32,12 @@ public class IntersectionofTwoArrays349 {
 		intersection(nums1, nums2);
 	}
 	
+	/**
+	 * 将两个数组保存到set集合中（因为不需要重复的元素），将两个set集合中重复的元素进行保留就是交集。
+	 * @param nums1
+	 * @param nums2
+	 * @return
+	 */
 	public static int[] intersection(int[] nums1, int[] nums2) {
 		Set<Integer> set = new HashSet<Integer>();
 		Set<Integer> table = new HashSet<Integer>();

@@ -30,6 +30,7 @@ public class ClimbingStairs70 {
 	
 	/**
 	 * 斐波那契数列
+	 * f(n) = f(n-1) + f(n-2)
 	 * @param n
 	 * @return
 	 */

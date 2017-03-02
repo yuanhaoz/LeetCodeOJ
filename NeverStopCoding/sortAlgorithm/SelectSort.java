@@ -42,5 +42,23 @@ public class SelectSort {
 			}
 		}
 	}
+	
+	// repeat1
+	public static void selectSort2(int[] arr){
+		if (arr == null || arr.length == 0) {
+			return ;
+		}
+		for (int i = 0; i < arr.length - 1; i++) {
+			int min = i;
+			for (int j = i + 1; j < arr.length; j++) {
+				if (arr[min] > arr[j]) {
+					min = j;
+				}
+			}
+			if (min != i) {
+				Swap.swap(arr, min, i);
+			}
+		}
+	}
 
 }

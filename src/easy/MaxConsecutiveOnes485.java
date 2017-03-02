@@ -35,7 +35,8 @@ public class MaxConsecutiveOnes485 {
 	}
 	
 	/**
-	 * 实现1
+	 * 实现1:
+	 * 设置标志位，如果是1，则为true。否则直到遇到0。
 	 * 
 	 * @param nums
 	 * @return

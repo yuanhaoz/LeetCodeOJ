@@ -5,6 +5,7 @@ Total Accepted: 118415
 Total Submissions: 390253
 Difficulty: Easy
 Contributors: Admin
+
 Given two binary strings, return their sum (also a binary string).
 
 For example,
@@ -23,17 +24,18 @@ public class AddBinary67 {
 		// TODO Auto-generated method stub
 		String a = "11";
 		String b = "1001";
-		int[] arrayA = stringToArray(a);
-        int[] arrayB = stringToArray(b);
-        for (int i = 0; i < arrayA.length; i++) {
-			System.out.print(arrayA[i] + " ");
-		}
-        System.out.println();
-        for (int i = 0; i < arrayB.length; i++) {
-			System.out.print(arrayB[i] + " ");
-		}
-        System.out.println();
-        System.out.println(addBinary(a, b));
+		addBinary2(a, b);
+//		int[] arrayA = stringToArray(a);
+//        int[] arrayB = stringToArray(b);
+//        for (int i = 0; i < arrayA.length; i++) {
+//			System.out.print(arrayA[i] + " ");
+//		}
+//        System.out.println();
+//        for (int i = 0; i < arrayB.length; i++) {
+//			System.out.print(arrayB[i] + " ");
+//		}
+//        System.out.println();
+//        System.out.println(addBinary(a, b));
 	}
 	
 	/**
@@ -48,13 +50,14 @@ public class AddBinary67 {
 	 * @param b
 	 * @return
 	 */
-	public String addBinary2(String a, String b) {
+	public static String addBinary2(String a, String b) {
         StringBuilder sb = new StringBuilder();
         int i = a.length() - 1, j = b.length() -1, carry = 0;
         while (i >= 0 || j >= 0) {
             int sum = carry;
             if (j >= 0) sum += b.charAt(j--) - '0';
             if (i >= 0) sum += a.charAt(i--) - '0';
+            System.out.println(sum);
             sb.append(sum % 2);
             carry = sum / 2;
         }

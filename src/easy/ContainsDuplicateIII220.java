@@ -1,8 +1,5 @@
 package easy;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**  
  * 220. Contains Duplicate III   Add to List QuestionEditorial Solution  My Submissions
 Total Accepted: 44208
@@ -26,27 +23,17 @@ public class ContainsDuplicateIII220 {
 //		int[] nums = {4, 2};
 //		int[] nums = {-5, 2147483647};
 		int[] nums = {2147483647, -5};
-		System.out.println(containsNearbyAlmostDuplicate(nums, 10000, 0));
+		System.out.println(containsNearbyAlmostDuplicate2(nums, 10000, 0));
 	}
 	
-	public static boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {
-		boolean flag = false;
-        Map<Integer, Integer> map = new HashMap<Integer, Integer>();
-        for (int i = 0; i < nums.length; i++) {
-			if (!map.keySet().contains(nums[i])) { // 第一次出现直接加入map
-				map.put(nums[i], i);
-			} else { // 后面出现的判断两次出现之间的下标差距
-				int dis = i - map.get(nums[i]);
-				if (dis <= k) {
-					return true;
-				} else {
-					map.put(nums[i], i);
-				}
-			}
-		}
-        return flag;
-    }
-	
+	/**
+	 * 不再使用HashMap，而是先根据条件两个数的下标不大于k判断两个数的范围
+	 * 然后比较两个数的差是不是不大于t
+	 * @param nums
+	 * @param k
+	 * @param t
+	 * @return
+	 */
 	public static boolean containsNearbyAlmostDuplicate2(int[] nums, int k, int t) {
         boolean flag = false;
         for (int i = 0; i < nums.length - 1; i++) {

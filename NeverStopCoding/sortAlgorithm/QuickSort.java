@@ -48,28 +48,27 @@ public class QuickSort {
 	
 	public static void quickSort(int[] arr, int left, int right){
 		if (left < right) {
-			int pivotPos = partition(arr, left, right); // pivotPos为中心点的位置，左边的元素都比该位置上的值小，右边的都大。
-			quickSort(arr, left, pivotPos - 1);
-			quickSort(arr, pivotPos + 1, right);
+			int pos = partition(arr, left, right);
+			quickSort(arr, left, pos - 1);
+			quickSort(arr, pos + 1, right);
 		}
 	}
 	
-	// 一次划分	Pivot:中心点
-	public static int partition(int[] arr, int left, int right) {
-		int pivotKey = arr[left];
-		int pivotPointer = left;
+	public static int partition(int[] arr, int left, int right){
+		int posKey = left;
+		int posVal = arr[left];
 		
 		while (left < right) {
-			while (left < right && arr[right] >= pivotKey) {
+			while (left < right && arr[right] > posVal) {
 				right--;
 			}
-			while (left < right && arr[left] <= pivotKey) {
+			while (left < right && arr[left] < posVal) {
 				left++;
 			}
-			Swap.swap(arr, left, right); // 把大的交换到右边，把小的交换到左边。
+			Swap.swap(arr, left, right);
 		}
-		Swap.swap(arr, pivotPointer, left); // 最后把pivot交换到中间
-		return left; // 最终返回left的位置，这个left位置面的值最后被交换为pivot（就是一开始的中心点）
+		Swap.swap(arr, left, posKey);
+		return left;
 	}
 	
 	// 其实上面的代码还可以再优化，上面代码中基准数已经在pivotKey中保存了，所以不需要每次交换都设置一个temp变量，

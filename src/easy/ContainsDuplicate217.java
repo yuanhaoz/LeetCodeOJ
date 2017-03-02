@@ -11,6 +11,7 @@ Total Accepted: 133021
 Total Submissions: 305661
 Difficulty: Easy
 Contributors: Admin
+
 Given an array of integers, find if the array contains any duplicates. 
 Your function should return true if any value appears at least twice in the array, 
 and it should return false if every element is distinct.
@@ -25,9 +26,14 @@ public class ContainsDuplicate217 {
 		int[] nums = {0,1,2,3,3,4,5,6};
 //		int[] nums = {0,1,2,3,4,5,6};
 //		int[] nums = {};
-		System.out.println(containsDuplicate2(nums));
+		System.out.println(containsDuplicate3(nums));
 	}
 	
+	/**
+	 * hashmap比较重复的值
+	 * @param nums
+	 * @return
+	 */
 	public static boolean containsDuplicate(int[] nums) {
 		Boolean flag = false;
 		Map<Integer, Integer> map = new HashMap<Integer, Integer>();
@@ -41,6 +47,11 @@ public class ContainsDuplicate217 {
 		return flag;
     }
 	
+	/**
+	 * 用Set比较重复的值
+	 * @param nums
+	 * @return
+	 */
 	public static boolean containsDuplicate2(int[] nums) {
 		Boolean flag = false;
 		Set<Integer> set = new HashSet<Integer>();
@@ -53,5 +64,22 @@ public class ContainsDuplicate217 {
 		}
 		return flag;
     }
+	
+	/**
+	 * set比较重复的值，foreach循环遍历数组的每个元素，不用关心元素下标
+	 * @param nums
+	 * @return
+	 */
+	public static boolean containsDuplicate3(int[] nums){
+		Set<Integer> set = new HashSet<Integer>();
+		for (Integer n : nums) {
+			if (set.contains(n)) {
+				return true;
+			} else {
+				set.add(n);
+			}
+		}
+		return false;
+	}
 
 }

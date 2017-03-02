@@ -11,6 +11,7 @@ Total Accepted: 47366
 Total Submissions: 108625
 Difficulty: Easy
 Contributors: Admin
+
 Given two arrays, write a function to compute their intersection.
 
 Example:

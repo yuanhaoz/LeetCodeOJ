@@ -5,6 +5,7 @@ Total Accepted: 142831
 Total Submissions: 284964
 Difficulty: Easy
 Contributors: Admin
+
 Given a non-negative integer num, repeatedly add all its digits until the result has only one digit.
 
 For example:

@@ -1,4 +1,4 @@
-package jobCode;
+package niuke;
 
 import java.util.Scanner;
 

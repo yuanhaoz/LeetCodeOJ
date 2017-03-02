@@ -32,6 +32,11 @@ public class IslandPerimeter463 {
 
 	}
 	
+	/**
+	 * 4*所有值为1元素个数 - 2*所有相邻元素个数
+	 * @param grid
+	 * @return
+	 */
 	public static int islandPerimeter(int[][] grid) {
 		int islands = 0, neighbours = 0;
 
