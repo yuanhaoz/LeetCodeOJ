@@ -18,5 +18,6 @@ public class ReplaceSpace {
     	newstr = newstr.replace(" ", "%20");
         return newstr;
     }
+	
 
 }

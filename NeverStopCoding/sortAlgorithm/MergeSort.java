@@ -65,8 +65,47 @@ public class MergeSort {
 		}
 		
 		for (int p = 0; p < temp.length; p++) {
+			System.out.println(left + p);
 			arr[left + p] = temp[p];
 		}
 	}
+	
+//	public static void mSort2(int[] arr, int left, int right){
+//		if (left >= right) {
+//			return ;
+//		}
+//		int mid = (left + right) / 2;
+//		mSort2(arr, left, mid);
+//		mSort2(arr, mid + 1, right);
+//		merge2(arr, left, mid, right);
+//	}
+//	
+//	public static void merge2(int[] arr, int left, int mid, int right){
+//		int i = left;
+//		int j = mid + 1;
+//		int k = 0;
+//		int len = right - left + 1;
+//		int[] temp = new int[len];
+//		
+//		while(i <= mid && j <= right){
+//			if (arr[i] <= arr[j]) {
+//				temp[k++] = arr[i++];
+//			} else {
+//				temp[k++] = arr[j++];
+//			}
+//		}
+//		
+//		while (i <= mid) {
+//			temp[k++] = arr[i++];
+//		}
+//		
+//		while (j <= right) {
+//			temp[k++] = arr[j++];
+//		}
+//		
+//		for (int p = 0; p < temp.length; p++) {
+//			arr[left + p] = temp[p];
+//		}
+//	}
 
 }
