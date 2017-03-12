@@ -5,7 +5,7 @@ package app;
  * @author 郑元浩 
  * @date 2017年2月24日 下午8:51:52 
  */
-public class ReplaceSpace {
+public class T4_ReplaceSpace {
 
 	public static void main(String[] args) {
 		StringBuffer str = new StringBuffer();
@@ -18,5 +18,6 @@ public class ReplaceSpace {
     	newstr = newstr.replace(" ", "%20");
         return newstr;
     }
+	
 
 }
