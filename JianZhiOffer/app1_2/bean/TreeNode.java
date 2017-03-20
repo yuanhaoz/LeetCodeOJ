@@ -1,4 +1,4 @@
-package app.bean;
+package app1_2.bean;
 /**  
  * 二叉树的定义
  * Definition for binary tree

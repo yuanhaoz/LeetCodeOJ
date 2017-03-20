@@ -1,6 +1,6 @@
-package app;
+package app1_2;
 
-import app.bean.TreeNode;
+import app1_2.bean.TreeNode;
 
 /**  
  * 树是一种在实际编程中经常遇到的数据结构。它的逻辑很简单：除了根节点之外的每个节点只有一个父节点，根节点没有父节点；

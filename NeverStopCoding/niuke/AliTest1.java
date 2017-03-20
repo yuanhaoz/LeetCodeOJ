@@ -14,11 +14,8 @@ package niuke;
  * @author 郑元浩 
  * @date 2017年3月3日 下午7:17:52 
  */
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 
 public class AliTest1 {
@@ -93,7 +90,8 @@ public class AliTest1 {
 
     public static void main(String[] args){
         ArrayList<Integer> inputs = new ArrayList<Integer>();
-        Scanner in = new Scanner(System.in);
+        @SuppressWarnings("resource")
+		Scanner in = new Scanner(System.in);
         String line = in.nextLine();
         while(line != null && !line.isEmpty()) {
             int value = Integer.parseInt(line.trim());

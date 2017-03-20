@@ -1,9 +1,9 @@
-package app;
+package app1_2;
 
 import java.util.ArrayList;
 import java.util.Stack;
 
-import lintcode.ListNode;
+import app1_2.bean.ListNode;
 
 /**  
  * 面试题5：从尾到头打印链表

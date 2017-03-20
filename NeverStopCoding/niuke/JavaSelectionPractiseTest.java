@@ -1,7 +1,5 @@
 package niuke;
 
-import java.util.TreeSet;
-import java.util.concurrent.CopyOnWriteArrayList;
 
 /**  
  * Java选择题训练   
