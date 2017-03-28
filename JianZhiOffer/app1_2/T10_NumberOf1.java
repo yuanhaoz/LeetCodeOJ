@@ -98,9 +98,9 @@ public class T10_NumberOf1 {
 		System.out.println(numberOfOne(0B00000000_00000000_00000000_00000000)); // 0
         System.out.println(numberOfOne(0B00000000_00000000_00000000_00000001)); // 1
         System.out.println(numberOfOne(0B11111111_11111111_11111111_11111111)); // -1
-        System.out.println(0B01111111_11111111_11111111_11111111 == Integer.MAX_VALUE);
+//        System.out.println(0B01111111_11111111_11111111_11111111 == Integer.MAX_VALUE);
         System.out.println(numberOfOne(0B01111111_11111111_11111111_11111111)); // Integer.MAX_VALUE
-        System.out.println(0B10000000_00000000_00000000_00000000 == Integer.MIN_VALUE);
+//        System.out.println(0B10000000_00000000_00000000_00000000 == Integer.MIN_VALUE);
         System.out.println(numberOfOne(0B10000000_00000000_00000000_00000000)); // Integer.MIN_VALUE
 
         System.out.println("");

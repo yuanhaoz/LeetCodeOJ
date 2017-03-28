@@ -68,6 +68,7 @@ public class QuickSort {
 			Swap.swap(arr, left, right);
 		}
 		Swap.swap(arr, left, posKey);
+//		System.out.println(Arrays.toString(arr));
 		return left;
 	}
 	

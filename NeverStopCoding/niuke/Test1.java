@@ -11,6 +11,7 @@ import java.util.Scanner;
 public class Test1 {
 
 	public static void main(String[] args) {
+		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
         while (in.hasNextInt()) {//注意while处理多个case
             int a = in.nextInt();
@@ -20,6 +21,7 @@ public class Test1 {
 	}
 	
 	public static void test1(){
+		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int ans = 0, x;

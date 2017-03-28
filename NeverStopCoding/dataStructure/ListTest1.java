@@ -20,36 +20,36 @@ package dataStructure;
  */
 
 // 单链表的节点
-class Node {
-	//注：此处的两个成员变量权限不能为private，因为private的权限是仅对本类访问。  
-	int data; // 数据域
-	Node next; // 指针域
-	
-	public Node(int data) { // 构造函数
-		this.data = data;
-		next = null;
-	}
-	
-	public Node(int data, Node next) {
-		this.data = data;
-		this.next = next;
-	}
-}
+//class Node {
+//	//注：此处的两个成员变量权限不能为private，因为private的权限是仅对本类访问。  
+//	int data; // 数据域
+//	Node next; // 指针域
+//	
+//	public Node(int data) { // 构造函数
+//		this.data = data;
+//		next = null;
+//	}
+//	
+//	public Node(int data, Node next) {
+//		this.data = data;
+//		this.next = next;
+//	}
+//}
 
 // 1. 单链表的创建和遍历：ListTest1是一个自己实现的单链表
 public class ListTest1 {
 
 	// 头指针和当前指针
-	public Node head;
-	public Node current;
+	public ListNode head;
+	public ListNode current;
 	
 	// 方法1：向链表中添加数据
 	public void add(int data){
 		if (head == null) { // 头结点为空，说明这个链表还没有创建，那就把新的节点赋给头结点
-			head = new Node(data);
+			head = new ListNode(data);
 			current = head;
 		} else {
-			current.next = new Node(data); // 创建新的节点，放在当前节点的后面
+			current.next = new ListNode(data); // 创建新的节点，放在当前节点的后面
 			current = current.next; // 此步操作完成之后，current节点指向新添加的那个节点
 		}
 	}
@@ -92,7 +92,7 @@ public class ListTest1 {
 	}
 	
 	// 方法4：遍历链表，打印输出链表。方法的参数表示从节点node开始进行遍历
-	public void print(Node node){
+	public void print(ListNode node){
 		if (node == null) {
 			return ;
 		}

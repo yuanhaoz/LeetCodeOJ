@@ -3,7 +3,7 @@ package app1_2;
 import java.util.ArrayList;
 import java.util.Stack;
 
-import app1_2.bean.ListNode;
+import bean.ListNode;
 
 /**  
  * 面试题5：从尾到头打印链表

@@ -12,6 +12,7 @@ import java.util.Scanner;
 public class JavaSkillTest1 {
 
 	public static void main(String[] args) {
+		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
 		int n = in.nextInt();
 		int p = 2, q = 2;

@@ -21,6 +21,9 @@ public class BubbleSort {
 		int[] arr = {5, 3, 4, 8, 6};
 		bubbleSort(arr);
 		System.out.println(Arrays.toString(arr));
+		int[] arr1 = {3, 4, 5, 6, 8};
+		bubbleSort3(arr1);
+		System.out.println(Arrays.toString(arr1));
 	}
 	
 	public static void bubbleSort(int[] arr){
@@ -48,6 +51,25 @@ public class BubbleSort {
 				}
 			}
 		}
+	}
+	
+	/**
+	 * 改进的冒泡排序算法：最佳情况下时间复杂度为O(n)
+	 * @param arr
+	 */
+	public static void bubbleSort3(int arr[]) {
+	    boolean didSwap;
+	    for(int i = 0, len = arr.length; i < len - 1; i++) {
+	        didSwap = false;
+	        for(int j = 0; j < len - i - 1; j++) {
+	            if(arr[j + 1] < arr[j]) {
+	            	Swap.swap(arr, j, j + 1);
+	                didSwap = true;
+	            }
+	        }
+	        if(didSwap == false) // 如果是有序的，则不会发生上面的比较，标志位为false
+	            return;
+	    }    
 	}
 
 }

@@ -84,10 +84,8 @@ public class JavaSelectionPractiseTest {
 	 * @return
 	 */
 	public static int test4(){
-		int i = 1; 
 		try {  
 			System.out.println("try block");  
-			i = 1 / 0; 
 			return 1;  
 		}catch (Exception e){ 
 			System.out.println("exception block"); 
@@ -109,6 +107,7 @@ public class JavaSelectionPractiseTest {
 	 * 返回1
 	 * @return
 	 */
+	@SuppressWarnings("finally")
 	public static int getValue() { 
 		try { 
 			return 0; 
@@ -134,6 +133,7 @@ public class JavaSelectionPractiseTest {
 	 * 返回5
 	 * @return
 	 */
+	@SuppressWarnings("finally")
 	public static int getValue3() {
 		int i = 1;
 		try {
