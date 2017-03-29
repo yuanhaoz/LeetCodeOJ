@@ -48,32 +48,12 @@ public class QuickSort {
 	
 	public static void quickSort(int[] arr, int left, int right){
 		if (left < right) {
-			int pos = partition(arr, left, right);
+			int pos = partition2(arr, left, right);
 			quickSort(arr, left, pos - 1);
 			quickSort(arr, pos + 1, right);
 		}
 	}
 	
-	public static int partition(int[] arr, int left, int right){
-		int posKey = left;
-		int posVal = arr[left];
-		
-		while (left < right) {
-			while (left < right && arr[right] > posVal) {
-				right--;
-			}
-			while (left < right && arr[left] < posVal) {
-				left++;
-			}
-			Swap.swap(arr, left, right);
-		}
-		Swap.swap(arr, left, posKey);
-//		System.out.println(Arrays.toString(arr));
-		return left;
-	}
-	
-	// 其实上面的代码还可以再优化，上面代码中基准数已经在pivotKey中保存了，所以不需要每次交换都设置一个temp变量，
-	// 在交换左右指针的时候只需要先后覆盖就可以了。这样既能减少空间的使用还能降低赋值运算的次数。
 	public static int partition2(int[] arr, int left, int right) {
 		int pivotKey = arr[left];
 		
@@ -82,7 +62,7 @@ public class QuickSort {
 				right--;
 			}
 			arr[left] = arr[right];
-			while (left < right && arr[left] <= pivotKey) {
+			while (left < right && arr[left] < pivotKey) {
 				left++;
 			}
 			arr[right] = arr[left];
