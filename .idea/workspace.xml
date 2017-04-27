@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cd187d9-4cd3-49ab-a876-1a42917bd127" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LeetCode/easy/ArrayPartitionI561.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LeetCode/medium/ThreeSumClosest16.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app1_2/T10_NumberOf1.class" afterPath="$PROJECT_DIR$/bin/app1_2/T10_NumberOf1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app1_2/T3_TwoArraySearch.class" afterPath="$PROJECT_DIR$/bin/app1_2/T3_TwoArraySearch.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app1_2/T4_ReplaceSpace.class" afterPath="$PROJECT_DIR$/bin/app1_2/T4_ReplaceSpace.class" />
@@ -213,93 +213,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/structure/Mp4Player.class" afterPath="$PROJECT_DIR$/bin/structure/Mp4Player.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/structure/VlcPlayer.class" afterPath="$PROJECT_DIR$/bin/structure/VlcPlayer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/utils/Log.class" afterPath="$PROJECT_DIR$/bin/utils/Log.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.classpath" afterPath="$PROJECT_DIR$/.classpath" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.project" afterPath="$PROJECT_DIR$/.project" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JianZhiOffer/app1_2/T4_ReplaceSpace.java" afterPath="$PROJECT_DIR$/JianZhiOffer/app1_2/T4_ReplaceSpace.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/.gitignore" afterPath="$PROJECT_DIR$/bin/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/AddBinary67.java" afterPath="$PROJECT_DIR$/LeetCode/easy/AddBinary67.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/AddDigits258.java" afterPath="$PROJECT_DIR$/LeetCode/easy/AddDigits258.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/BullsandCows299.java" afterPath="$PROJECT_DIR$/LeetCode/easy/BullsandCows299.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/ClimbingStairs70.java" afterPath="$PROJECT_DIR$/LeetCode/easy/ClimbingStairs70.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/ContainsDuplicate217.java" afterPath="$PROJECT_DIR$/LeetCode/easy/ContainsDuplicate217.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/ContainsDuplicateII219.java" afterPath="$PROJECT_DIR$/LeetCode/easy/ContainsDuplicateII219.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/ContainsDuplicateIII220.java" afterPath="$PROJECT_DIR$/LeetCode/easy/ContainsDuplicateIII220.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/DeleteNodeinaLinkedList237.java" afterPath="$PROJECT_DIR$/LeetCode/easy/DeleteNodeinaLinkedList237.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/FindAllNumbersDisappeared448.java" afterPath="$PROJECT_DIR$/LeetCode/easy/FindAllNumbersDisappeared448.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/FindtheDifference389.java" afterPath="$PROJECT_DIR$/LeetCode/easy/FindtheDifference389.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/IntersectionofTwoArrays349.java" afterPath="$PROJECT_DIR$/LeetCode/easy/IntersectionofTwoArrays349.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/IntersectionofTwoArraysII350.java" afterPath="$PROJECT_DIR$/LeetCode/easy/IntersectionofTwoArraysII350.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/IslandPerimeter463.java" afterPath="$PROJECT_DIR$/LeetCode/easy/IslandPerimeter463.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/IsomorphicStrings205.java" afterPath="$PROJECT_DIR$/LeetCode/easy/IsomorphicStrings205.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/LinkedListCycle141.java" afterPath="$PROJECT_DIR$/LeetCode/easy/LinkedListCycle141.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/LinkedListCycleII142.java" afterPath="$PROJECT_DIR$/LeetCode/easy/LinkedListCycleII142.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/ListNode.java" afterPath="$PROJECT_DIR$/LeetCode/easy/ListNode.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/MajorityElement169.java" afterPath="$PROJECT_DIR$/LeetCode/easy/MajorityElement169.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/MajorityElementII229.java" afterPath="$PROJECT_DIR$/LeetCode/easy/MajorityElementII229.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/MaxConsecutiveOnes485.java" afterPath="$PROJECT_DIR$/LeetCode/easy/MaxConsecutiveOnes485.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/MergeSortedArray88.java" afterPath="$PROJECT_DIR$/LeetCode/easy/MergeSortedArray88.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/MoveZeroes283.java" afterPath="$PROJECT_DIR$/LeetCode/easy/MoveZeroes283.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/MultiplyStrings43.java" afterPath="$PROJECT_DIR$/LeetCode/easy/MultiplyStrings43.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/NimGame.java" afterPath="$PROJECT_DIR$/LeetCode/easy/NimGame.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/PascalTriangle118.java" afterPath="$PROJECT_DIR$/LeetCode/easy/PascalTriangle118.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/PascalTriangleII119.java" afterPath="$PROJECT_DIR$/LeetCode/easy/PascalTriangleII119.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/PlusOne66.java" afterPath="$PROJECT_DIR$/LeetCode/easy/PlusOne66.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/ProductofArrayExceptSelf238.java" afterPath="$PROJECT_DIR$/LeetCode/easy/ProductofArrayExceptSelf238.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/RemoveDuplicatesfromSortedArray26.java" afterPath="$PROJECT_DIR$/LeetCode/easy/RemoveDuplicatesfromSortedArray26.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/RemoveDuplicatesfromSortedList83.java" afterPath="$PROJECT_DIR$/LeetCode/easy/RemoveDuplicatesfromSortedList83.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/RemoveElement27.java" afterPath="$PROJECT_DIR$/LeetCode/easy/RemoveElement27.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/ReverseLinkedList206.java" afterPath="$PROJECT_DIR$/LeetCode/easy/ReverseLinkedList206.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/ReverseString344.java" afterPath="$PROJECT_DIR$/LeetCode/easy/ReverseString344.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/RotateArray189.java" afterPath="$PROJECT_DIR$/LeetCode/easy/RotateArray189.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/SingleNumber136.java" afterPath="$PROJECT_DIR$/LeetCode/easy/SingleNumber136.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/SingleNumberII137.java" afterPath="$PROJECT_DIR$/LeetCode/easy/SingleNumberII137.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/ThirdMaximumNumber414.java" afterPath="$PROJECT_DIR$/LeetCode/easy/ThirdMaximumNumber414.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/TwoSum1.java" afterPath="$PROJECT_DIR$/LeetCode/easy/TwoSum1.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/TwoSumII167.java" afterPath="$PROJECT_DIR$/LeetCode/easy/TwoSumII167.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/UglyNumber263.java" afterPath="$PROJECT_DIR$/LeetCode/easy/UglyNumber263.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/UglyNumberII264.java" afterPath="$PROJECT_DIR$/LeetCode/easy/UglyNumberII264.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/ValidSudoku36.java" afterPath="$PROJECT_DIR$/LeetCode/easy/ValidSudoku36.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/easy/WordPattern290.java" afterPath="$PROJECT_DIR$/LeetCode/easy/WordPattern290.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/hard/First.java" afterPath="$PROJECT_DIR$/LeetCode/hard/First.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/hard/MinimumWindowSubstring76.java" afterPath="$PROJECT_DIR$/LeetCode/hard/MinimumWindowSubstring76.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/AddTwoNumbers2.java" afterPath="$PROJECT_DIR$/LeetCode/medium/AddTwoNumbers2.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/BestTimetoBuyandSellStock121.java" afterPath="$PROJECT_DIR$/LeetCode/medium/BestTimetoBuyandSellStock121.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/BestTimetoBuyandSellStockII122.java" afterPath="$PROJECT_DIR$/LeetCode/medium/BestTimetoBuyandSellStockII122.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/BestTimetoBuyandSellStockIII123.java" afterPath="$PROJECT_DIR$/LeetCode/medium/BestTimetoBuyandSellStockIII123.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/BestTimetoBuyandSellStockIV188.java" afterPath="$PROJECT_DIR$/LeetCode/medium/BestTimetoBuyandSellStockIV188.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/CombinationSum39.java" afterPath="$PROJECT_DIR$/LeetCode/medium/CombinationSum39.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/ContainerWithMostWater11.java" afterPath="$PROJECT_DIR$/LeetCode/medium/ContainerWithMostWater11.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/FindAllDuplicatesinanArray442.java" afterPath="$PROJECT_DIR$/LeetCode/medium/FindAllDuplicatesinanArray442.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/FindMinimuminRotatedSortedArray153.java" afterPath="$PROJECT_DIR$/LeetCode/medium/FindMinimuminRotatedSortedArray153.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/FindMinimuminRotatedSortedArrayII154.java" afterPath="$PROJECT_DIR$/LeetCode/medium/FindMinimuminRotatedSortedArrayII154.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/FindPeakElement162.java" afterPath="$PROJECT_DIR$/LeetCode/medium/FindPeakElement162.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/KthLargestElementinanArray215.java" afterPath="$PROJECT_DIR$/LeetCode/medium/KthLargestElementinanArray215.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/KthSmallestElementinaSortedMatrix378.java" afterPath="$PROJECT_DIR$/LeetCode/medium/KthSmallestElementinaSortedMatrix378.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/LongestIncreasingSubsequence300.java" afterPath="$PROJECT_DIR$/LeetCode/medium/LongestIncreasingSubsequence300.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/LongestSubstringWithoutRepeatingCharacters3.java" afterPath="$PROJECT_DIR$/LeetCode/medium/LongestSubstringWithoutRepeatingCharacters3.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/MaximumProductSubarray152.java" afterPath="$PROJECT_DIR$/LeetCode/medium/MaximumProductSubarray152.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/MaximumSubarray53.java" afterPath="$PROJECT_DIR$/LeetCode/medium/MaximumSubarray53.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/MinimumPathSum64.java" afterPath="$PROJECT_DIR$/LeetCode/medium/MinimumPathSum64.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/MinimumSizeSubarraySum209.java" afterPath="$PROJECT_DIR$/LeetCode/medium/MinimumSizeSubarraySum209.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/MissingNumber268.java" afterPath="$PROJECT_DIR$/LeetCode/medium/MissingNumber268.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/RemoveDuplicatesfromSortedArrayII80.java" afterPath="$PROJECT_DIR$/LeetCode/medium/RemoveDuplicatesfromSortedArrayII80.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/SearchInsertPosition35.java" afterPath="$PROJECT_DIR$/LeetCode/medium/SearchInsertPosition35.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/Searcha2DMatrix74.java" afterPath="$PROJECT_DIR$/LeetCode/medium/Searcha2DMatrix74.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/Searcha2DMatrixII240.java" afterPath="$PROJECT_DIR$/LeetCode/medium/Searcha2DMatrixII240.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/SearchforaRange34.java" afterPath="$PROJECT_DIR$/LeetCode/medium/SearchforaRange34.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/SetMatrixZeroes73.java" afterPath="$PROJECT_DIR$/LeetCode/medium/SetMatrixZeroes73.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/SortCharactersByFrequency451.java" afterPath="$PROJECT_DIR$/LeetCode/medium/SortCharactersByFrequency451.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/SortColors75.java" afterPath="$PROJECT_DIR$/LeetCode/medium/SortColors75.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/Subsets78.java" afterPath="$PROJECT_DIR$/LeetCode/medium/Subsets78.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/ThreeSum15.java" afterPath="$PROJECT_DIR$/LeetCode/medium/ThreeSum15.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/TopKFrequentElements347.java" afterPath="$PROJECT_DIR$/LeetCode/medium/TopKFrequentElements347.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/Triangle120.java" afterPath="$PROJECT_DIR$/LeetCode/medium/Triangle120.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/UniquePaths62.java" afterPath="$PROJECT_DIR$/LeetCode/medium/UniquePaths62.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/medium/UniquePathsII63.java" afterPath="$PROJECT_DIR$/LeetCode/medium/UniquePathsII63.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/utils/Log.java" afterPath="$PROJECT_DIR$/LeetCode/utils/Log.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -311,7 +225,45 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="ArrayPartitionI561.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LeetCode/easy/ArrayPartitionI561.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="45" column="37" lean-forward="true" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ThreeSum15.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LeetCode/medium/ThreeSum15.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="49" column="62" lean-forward="false" selection-start-line="49" selection-start-column="62" selection-end-line="49" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ThreeSumClosest16.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LeetCode/medium/ThreeSumClosest16.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="14" column="50" lean-forward="false" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -319,6 +271,14 @@
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/LeetCode/easy/ArrayPartitionI561.java" />
+        <option value="$PROJECT_DIR$/LeetCode/medium/ThreeSumClosest16.java" />
+      </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -332,6 +292,9 @@
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -361,6 +324,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeForWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeForWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeetCode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeForWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeForWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeetCode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="medium" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -386,7 +381,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.T3_TwoArraySearch">
+  <component name="RunManager" selected="Application.ThreeSumClosest16">
     <configuration default="false" name="T3_TwoArraySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -395,6 +390,46 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="app1_2.T3_TwoArraySearch" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="CodeForWork" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ArrayPartitionI561" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="easy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="easy.ArrayPartitionI561" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="CodeForWork" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ThreeSumClosest16" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="medium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="medium.ThreeSumClosest16" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -787,12 +822,16 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="1">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.T3_TwoArraySearch" />
+      <item index="1" class="java.lang.String" itemvalue="Application.ArrayPartitionI561" />
+      <item index="2" class="java.lang.String" itemvalue="Application.ThreeSumClosest16" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.T3_TwoArraySearch" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Application.ThreeSumClosest16" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ArrayPartitionI561" />
+        <item index="2" class="java.lang.String" itemvalue="Application.T3_TwoArraySearch" />
       </list>
     </recent_temporary>
   </component>
@@ -806,15 +845,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1493259441817</updated>
-      <workItem from="1493259444366" duration="247000" />
+      <workItem from="1493259444366" duration="4835000" />
     </task>
+    <task id="LOCAL-00001" summary="修改了工程名">
+      <created>1493259754767</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1493259754767</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="247000" />
+    <option name="totallyTimeSpent" value="4835000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -826,12 +874,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22017354" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20682302" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -852,6 +900,13 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="修改了工程名" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改了工程名" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -889,6 +944,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeetCode/easy/AddBinary67.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2116">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeetCode/easy/ArrayPartitionI561.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="45" column="37" lean-forward="true" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeetCode/medium/ThreeSum15.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="49" column="62" lean-forward="false" selection-start-line="49" selection-start-column="62" selection-end-line="49" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeetCode/medium/ThreeSumClosest16.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="50" lean-forward="false" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
           <folding />
         </state>
       </provider>
