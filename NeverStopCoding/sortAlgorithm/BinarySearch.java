@@ -1,4 +1,5 @@
 package sortAlgorithm;
+
 /**  
  * 二分查找   
  *  

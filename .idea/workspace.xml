@@ -2,9 +2,245 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebcfe6a5-1e62-4dd7-9c96-975bb1f1c46a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaConcurrency/chapter1/DeadLockDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaConcurrency/chapter2/Counter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaConcurrency/chapter2/package-info.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaConcurrency/chapter3/package-info.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JianZhiOffer/app7/StringTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NeverStopCoding/dataStructure/ProducerConsumer.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/app1_2/package-info.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/app3/package-info.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/app4/package-info.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/baseJava/package-info.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/bean/package-info.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/behavior/package-info.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/create/package-info.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/dataStructure/package-info.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/niuke/package-info.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/sortAlgorithm/package-info.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/structure/package-info.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app1_2/T10_NumberOf1.class" afterPath="$PROJECT_DIR$/bin/app1_2/T10_NumberOf1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app1_2/T3_TwoArraySearch.class" afterPath="$PROJECT_DIR$/bin/app1_2/T3_TwoArraySearch.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app1_2/T4_ReplaceSpace.class" afterPath="$PROJECT_DIR$/bin/app1_2/T4_ReplaceSpace.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app1_2/T5_PrintListFromListToHead.class" afterPath="$PROJECT_DIR$/bin/app1_2/T5_PrintListFromListToHead.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app1_2/T6_ReConstructBinaryTree.class" afterPath="$PROJECT_DIR$/bin/app1_2/T6_ReConstructBinaryTree.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app1_2/T7_TwoStackToQueue.class" afterPath="$PROJECT_DIR$/bin/app1_2/T7_TwoStackToQueue.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app1_2/T8_MinNumberInRotateArray.class" afterPath="$PROJECT_DIR$/bin/app1_2/T8_MinNumberInRotateArray.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app1_2/T9_Fibonacci.class" afterPath="$PROJECT_DIR$/bin/app1_2/T9_Fibonacci.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app3/T11_Power.class" afterPath="$PROJECT_DIR$/bin/app3/T11_Power.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app3/T12_PrintOneToNthDigits.class" afterPath="$PROJECT_DIR$/bin/app3/T12_PrintOneToNthDigits.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app3/T13_DeleteNode.class" afterPath="$PROJECT_DIR$/bin/app3/T13_DeleteNode.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app3/T14_ReorderOddEven.class" afterPath="$PROJECT_DIR$/bin/app3/T14_ReorderOddEven.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app3/T15_FindKthToTail.class" afterPath="$PROJECT_DIR$/bin/app3/T15_FindKthToTail.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app3/T16_ReverseList.class" afterPath="$PROJECT_DIR$/bin/app3/T16_ReverseList.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app3/T17_MergeList.class" afterPath="$PROJECT_DIR$/bin/app3/T17_MergeList.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app3/T18_HasSubtree.class" afterPath="$PROJECT_DIR$/bin/app3/T18_HasSubtree.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app4/MinStackSimple.class" afterPath="$PROJECT_DIR$/bin/app4/MinStackSimple.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app4/T19_MirrorBinaryTree.class" afterPath="$PROJECT_DIR$/bin/app4/T19_MirrorBinaryTree.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app4/T20_PrintMatrixClockWisely.class" afterPath="$PROJECT_DIR$/bin/app4/T20_PrintMatrixClockWisely.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app4/T21_MinStack$StackWithMin.class" afterPath="$PROJECT_DIR$/bin/app4/T21_MinStack$StackWithMin.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app4/T21_MinStack.class" afterPath="$PROJECT_DIR$/bin/app4/T21_MinStack.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app4/T22_IsPopOrder.class" afterPath="$PROJECT_DIR$/bin/app4/T22_IsPopOrder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app4/T23_PrintFromTopToBottom.class" afterPath="$PROJECT_DIR$/bin/app4/T23_PrintFromTopToBottom.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app4/T24_VerifySequenceOfBST.class" afterPath="$PROJECT_DIR$/bin/app4/T24_VerifySequenceOfBST.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app4/T25_FindPath.class" afterPath="$PROJECT_DIR$/bin/app4/T25_FindPath.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app4/T26_CloneNodes.class" afterPath="$PROJECT_DIR$/bin/app4/T26_CloneNodes.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app4/T27_Convert.class" afterPath="$PROJECT_DIR$/bin/app4/T27_Convert.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app4/T28_Permutation.class" afterPath="$PROJECT_DIR$/bin/app4/T28_Permutation.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/baseJava/HasStatic.class" afterPath="$PROJECT_DIR$/bin/baseJava/HasStatic.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/baseJava/List.class" afterPath="$PROJECT_DIR$/bin/baseJava/List.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/baseJava/Main.class" afterPath="$PROJECT_DIR$/bin/baseJava/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/baseJava/Map.class" afterPath="$PROJECT_DIR$/bin/baseJava/Map.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/baseJava/Set.class" afterPath="$PROJECT_DIR$/bin/baseJava/Set.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/bean/ComplexListNode.class" afterPath="$PROJECT_DIR$/bin/bean/ComplexListNode.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/bean/ListNode.class" afterPath="$PROJECT_DIR$/bin/bean/ListNode.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/bean/TreeNode.class" afterPath="$PROJECT_DIR$/bin/bean/TreeNode.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/AbstractFactory.class" afterPath="$PROJECT_DIR$/bin/create/AbstractFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/AbstractFactoryPatternTest.class" afterPath="$PROJECT_DIR$/bin/create/AbstractFactoryPatternTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/Blue.class" afterPath="$PROJECT_DIR$/bin/create/Blue.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/Bottle.class" afterPath="$PROJECT_DIR$/bin/create/Bottle.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/BuilderPatternTest.class" afterPath="$PROJECT_DIR$/bin/create/BuilderPatternTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/Burger.class" afterPath="$PROJECT_DIR$/bin/create/Burger.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/ChickenBurger.class" afterPath="$PROJECT_DIR$/bin/create/ChickenBurger.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/Circle.class" afterPath="$PROJECT_DIR$/bin/create/Circle.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/Circle1.class" afterPath="$PROJECT_DIR$/bin/create/Circle1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/Coke.class" afterPath="$PROJECT_DIR$/bin/create/Coke.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/ColdDrink.class" afterPath="$PROJECT_DIR$/bin/create/ColdDrink.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/Color.class" afterPath="$PROJECT_DIR$/bin/create/Color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/ColorFactory.class" afterPath="$PROJECT_DIR$/bin/create/ColorFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/FactoryPatternTest.class" afterPath="$PROJECT_DIR$/bin/create/FactoryPatternTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/FactoryProducer.class" afterPath="$PROJECT_DIR$/bin/create/FactoryProducer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/Green.class" afterPath="$PROJECT_DIR$/bin/create/Green.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/Item.class" afterPath="$PROJECT_DIR$/bin/create/Item.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/Meal.class" afterPath="$PROJECT_DIR$/bin/create/Meal.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/MealBuilder.class" afterPath="$PROJECT_DIR$/bin/create/MealBuilder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/Packing.class" afterPath="$PROJECT_DIR$/bin/create/Packing.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/Pepsi.class" afterPath="$PROJECT_DIR$/bin/create/Pepsi.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/PrototypePatternTest.class" afterPath="$PROJECT_DIR$/bin/create/PrototypePatternTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/Rectangle.class" afterPath="$PROJECT_DIR$/bin/create/Rectangle.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/Rectangle1.class" afterPath="$PROJECT_DIR$/bin/create/Rectangle1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/Red.class" afterPath="$PROJECT_DIR$/bin/create/Red.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/Shape.class" afterPath="$PROJECT_DIR$/bin/create/Shape.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/Shape1.class" afterPath="$PROJECT_DIR$/bin/create/Shape1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/ShapeCache.class" afterPath="$PROJECT_DIR$/bin/create/ShapeCache.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/ShapeFactory.class" afterPath="$PROJECT_DIR$/bin/create/ShapeFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/ShapeFactory1.class" afterPath="$PROJECT_DIR$/bin/create/ShapeFactory1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/SingleObject.class" afterPath="$PROJECT_DIR$/bin/create/SingleObject.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/Singleton1.class" afterPath="$PROJECT_DIR$/bin/create/Singleton1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/Singleton2.class" afterPath="$PROJECT_DIR$/bin/create/Singleton2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/Singleton3.class" afterPath="$PROJECT_DIR$/bin/create/Singleton3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/Singleton4.class" afterPath="$PROJECT_DIR$/bin/create/Singleton4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/Singleton5$SingletonHolder.class" afterPath="$PROJECT_DIR$/bin/create/Singleton5$SingletonHolder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/Singleton5.class" afterPath="$PROJECT_DIR$/bin/create/Singleton5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/Singleton6.class" afterPath="$PROJECT_DIR$/bin/create/Singleton6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/SingletonPatternTest.class" afterPath="$PROJECT_DIR$/bin/create/SingletonPatternTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/Square.class" afterPath="$PROJECT_DIR$/bin/create/Square.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/Square1.class" afterPath="$PROJECT_DIR$/bin/create/Square1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/VegBurger.class" afterPath="$PROJECT_DIR$/bin/create/VegBurger.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create/Wrapper.class" afterPath="$PROJECT_DIR$/bin/create/Wrapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/dataStructure/BinaryTree.class" afterPath="$PROJECT_DIR$/bin/dataStructure/BinaryTree.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/dataStructure/ListNode.class" afterPath="$PROJECT_DIR$/bin/dataStructure/ListNode.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/dataStructure/ListTest1.class" afterPath="$PROJECT_DIR$/bin/dataStructure/ListTest1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/dataStructure/ListTest2.class" afterPath="$PROJECT_DIR$/bin/dataStructure/ListTest2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/dataStructure/TreeNode.class" afterPath="$PROJECT_DIR$/bin/dataStructure/TreeNode.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/AddBinary67.class" afterPath="$PROJECT_DIR$/bin/easy/AddBinary67.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/AddDigits258.class" afterPath="$PROJECT_DIR$/bin/easy/AddDigits258.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/BullsandCows299.class" afterPath="$PROJECT_DIR$/bin/easy/BullsandCows299.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/ClimbingStairs70.class" afterPath="$PROJECT_DIR$/bin/easy/ClimbingStairs70.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/ContainsDuplicate217.class" afterPath="$PROJECT_DIR$/bin/easy/ContainsDuplicate217.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/ContainsDuplicateII219.class" afterPath="$PROJECT_DIR$/bin/easy/ContainsDuplicateII219.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/ContainsDuplicateIII220.class" afterPath="$PROJECT_DIR$/bin/easy/ContainsDuplicateIII220.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/DeleteNodeinaLinkedList237.class" afterPath="$PROJECT_DIR$/bin/easy/DeleteNodeinaLinkedList237.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/FindAllNumbersDisappeared448.class" afterPath="$PROJECT_DIR$/bin/easy/FindAllNumbersDisappeared448.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/FindtheDifference389.class" afterPath="$PROJECT_DIR$/bin/easy/FindtheDifference389.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/IntersectionofTwoArrays349.class" afterPath="$PROJECT_DIR$/bin/easy/IntersectionofTwoArrays349.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/IntersectionofTwoArraysII350.class" afterPath="$PROJECT_DIR$/bin/easy/IntersectionofTwoArraysII350.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/IslandPerimeter463.class" afterPath="$PROJECT_DIR$/bin/easy/IslandPerimeter463.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/IsomorphicStrings205.class" afterPath="$PROJECT_DIR$/bin/easy/IsomorphicStrings205.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/LinkedListCycle141.class" afterPath="$PROJECT_DIR$/bin/easy/LinkedListCycle141.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/LinkedListCycleII142.class" afterPath="$PROJECT_DIR$/bin/easy/LinkedListCycleII142.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/ListNode.class" afterPath="$PROJECT_DIR$/bin/easy/ListNode.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/MajorityElement169.class" afterPath="$PROJECT_DIR$/bin/easy/MajorityElement169.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/MajorityElementII229.class" afterPath="$PROJECT_DIR$/bin/easy/MajorityElementII229.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/MaxConsecutiveOnes485.class" afterPath="$PROJECT_DIR$/bin/easy/MaxConsecutiveOnes485.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/MergeSortedArray88.class" afterPath="$PROJECT_DIR$/bin/easy/MergeSortedArray88.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/MoveZeroes283.class" afterPath="$PROJECT_DIR$/bin/easy/MoveZeroes283.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/MultiplyStrings43.class" afterPath="$PROJECT_DIR$/bin/easy/MultiplyStrings43.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/NimGame.class" afterPath="$PROJECT_DIR$/bin/easy/NimGame.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/PascalTriangle118.class" afterPath="$PROJECT_DIR$/bin/easy/PascalTriangle118.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/PascalTriangleII119.class" afterPath="$PROJECT_DIR$/bin/easy/PascalTriangleII119.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/PlusOne66.class" afterPath="$PROJECT_DIR$/bin/easy/PlusOne66.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/ProductofArrayExceptSelf238.class" afterPath="$PROJECT_DIR$/bin/easy/ProductofArrayExceptSelf238.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/RemoveDuplicatesfromSortedArray26.class" afterPath="$PROJECT_DIR$/bin/easy/RemoveDuplicatesfromSortedArray26.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/RemoveDuplicatesfromSortedList83.class" afterPath="$PROJECT_DIR$/bin/easy/RemoveDuplicatesfromSortedList83.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/RemoveElement27.class" afterPath="$PROJECT_DIR$/bin/easy/RemoveElement27.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/ReverseLinkedList206.class" afterPath="$PROJECT_DIR$/bin/easy/ReverseLinkedList206.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/ReverseString344.class" afterPath="$PROJECT_DIR$/bin/easy/ReverseString344.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/RotateArray189.class" afterPath="$PROJECT_DIR$/bin/easy/RotateArray189.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/SingleNumber136.class" afterPath="$PROJECT_DIR$/bin/easy/SingleNumber136.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/SingleNumberII137.class" afterPath="$PROJECT_DIR$/bin/easy/SingleNumberII137.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/ThirdMaximumNumber414.class" afterPath="$PROJECT_DIR$/bin/easy/ThirdMaximumNumber414.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/TwoSum1.class" afterPath="$PROJECT_DIR$/bin/easy/TwoSum1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/TwoSumII167.class" afterPath="$PROJECT_DIR$/bin/easy/TwoSumII167.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/UglyNumber263.class" afterPath="$PROJECT_DIR$/bin/easy/UglyNumber263.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/UglyNumberII264.class" afterPath="$PROJECT_DIR$/bin/easy/UglyNumberII264.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/ValidSudoku36.class" afterPath="$PROJECT_DIR$/bin/easy/ValidSudoku36.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy/WordPattern290.class" afterPath="$PROJECT_DIR$/bin/easy/WordPattern290.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/hard/First.class" afterPath="$PROJECT_DIR$/bin/hard/First.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/hard/MinimumWindowSubstring76.class" afterPath="$PROJECT_DIR$/bin/hard/MinimumWindowSubstring76.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/AddTwoNumbers2$ListNode.class" afterPath="$PROJECT_DIR$/bin/medium/AddTwoNumbers2$ListNode.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/AddTwoNumbers2.class" afterPath="$PROJECT_DIR$/bin/medium/AddTwoNumbers2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/BestTimetoBuyandSellStock121.class" afterPath="$PROJECT_DIR$/bin/medium/BestTimetoBuyandSellStock121.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/BestTimetoBuyandSellStockII122.class" afterPath="$PROJECT_DIR$/bin/medium/BestTimetoBuyandSellStockII122.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/BestTimetoBuyandSellStockIII123.class" afterPath="$PROJECT_DIR$/bin/medium/BestTimetoBuyandSellStockIII123.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/BestTimetoBuyandSellStockIV188.class" afterPath="$PROJECT_DIR$/bin/medium/BestTimetoBuyandSellStockIV188.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/CombinationSum39.class" afterPath="$PROJECT_DIR$/bin/medium/CombinationSum39.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/ContainerWithMostWater11.class" afterPath="$PROJECT_DIR$/bin/medium/ContainerWithMostWater11.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/FindAllDuplicatesinanArray442.class" afterPath="$PROJECT_DIR$/bin/medium/FindAllDuplicatesinanArray442.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/FindMinimuminRotatedSortedArray153.class" afterPath="$PROJECT_DIR$/bin/medium/FindMinimuminRotatedSortedArray153.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/FindMinimuminRotatedSortedArrayII154.class" afterPath="$PROJECT_DIR$/bin/medium/FindMinimuminRotatedSortedArrayII154.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/FindPeakElement162.class" afterPath="$PROJECT_DIR$/bin/medium/FindPeakElement162.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/KthLargestElementinanArray215.class" afterPath="$PROJECT_DIR$/bin/medium/KthLargestElementinanArray215.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/KthSmallestElementinaSortedMatrix378.class" afterPath="$PROJECT_DIR$/bin/medium/KthSmallestElementinaSortedMatrix378.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/LongestIncreasingSubsequence300.class" afterPath="$PROJECT_DIR$/bin/medium/LongestIncreasingSubsequence300.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/LongestSubstringWithoutRepeatingCharacters3.class" afterPath="$PROJECT_DIR$/bin/medium/LongestSubstringWithoutRepeatingCharacters3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/MaximumProductSubarray152.class" afterPath="$PROJECT_DIR$/bin/medium/MaximumProductSubarray152.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/MaximumSubarray53.class" afterPath="$PROJECT_DIR$/bin/medium/MaximumSubarray53.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/MinimumPathSum64.class" afterPath="$PROJECT_DIR$/bin/medium/MinimumPathSum64.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/MinimumSizeSubarraySum209.class" afterPath="$PROJECT_DIR$/bin/medium/MinimumSizeSubarraySum209.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/MissingNumber268.class" afterPath="$PROJECT_DIR$/bin/medium/MissingNumber268.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/RemoveDuplicatesfromSortedArrayII80.class" afterPath="$PROJECT_DIR$/bin/medium/RemoveDuplicatesfromSortedArrayII80.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/SearchInsertPosition35.class" afterPath="$PROJECT_DIR$/bin/medium/SearchInsertPosition35.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/Searcha2DMatrix74.class" afterPath="$PROJECT_DIR$/bin/medium/Searcha2DMatrix74.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/Searcha2DMatrixII240.class" afterPath="$PROJECT_DIR$/bin/medium/Searcha2DMatrixII240.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/SearchforaRange34.class" afterPath="$PROJECT_DIR$/bin/medium/SearchforaRange34.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/SetMatrixZeroes73.class" afterPath="$PROJECT_DIR$/bin/medium/SetMatrixZeroes73.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/SortCharactersByFrequency451.class" afterPath="$PROJECT_DIR$/bin/medium/SortCharactersByFrequency451.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/SortColors75.class" afterPath="$PROJECT_DIR$/bin/medium/SortColors75.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/Subsets78.class" afterPath="$PROJECT_DIR$/bin/medium/Subsets78.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/ThreeSum15.class" afterPath="$PROJECT_DIR$/bin/medium/ThreeSum15.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/TopKFrequentElements347.class" afterPath="$PROJECT_DIR$/bin/medium/TopKFrequentElements347.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/Triangle120.class" afterPath="$PROJECT_DIR$/bin/medium/Triangle120.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/UniquePaths62.class" afterPath="$PROJECT_DIR$/bin/medium/UniquePaths62.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/medium/UniquePathsII63.class" afterPath="$PROJECT_DIR$/bin/medium/UniquePathsII63.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/niuke/AliTest1.class" afterPath="$PROJECT_DIR$/bin/niuke/AliTest1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/niuke/BaiduDancijielong.class" afterPath="$PROJECT_DIR$/bin/niuke/BaiduDancijielong.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/niuke/BaiduYemiandiaodu.class" afterPath="$PROJECT_DIR$/bin/niuke/BaiduYemiandiaodu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/niuke/JavaSelectionPractiseTest$1.class" afterPath="$PROJECT_DIR$/bin/niuke/JavaSelectionPractiseTest$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/niuke/JavaSelectionPractiseTest.class" afterPath="$PROJECT_DIR$/bin/niuke/JavaSelectionPractiseTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/niuke/JavaSkillTest1.class" afterPath="$PROJECT_DIR$/bin/niuke/JavaSkillTest1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/niuke/JavaSkillTest2.class" afterPath="$PROJECT_DIR$/bin/niuke/JavaSkillTest2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/niuke/MakePalindrome.class" afterPath="$PROJECT_DIR$/bin/niuke/MakePalindrome.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/niuke/SpiralMatrix$Direction.class" afterPath="$PROJECT_DIR$/bin/niuke/SpiralMatrix$Direction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/niuke/SpiralMatrix.class" afterPath="$PROJECT_DIR$/bin/niuke/SpiralMatrix.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/niuke/Test.class" afterPath="$PROJECT_DIR$/bin/niuke/Test.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/niuke/Test1.class" afterPath="$PROJECT_DIR$/bin/niuke/Test1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/niuke/Wangyi_Duilie.class" afterPath="$PROJECT_DIR$/bin/niuke/Wangyi_Duilie.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/niuke/Wangyi_Xipai.class" afterPath="$PROJECT_DIR$/bin/niuke/Wangyi_Xipai.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/niuke/Wangyi_caodi.class" afterPath="$PROJECT_DIR$/bin/niuke/Wangyi_caodi.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/niuke/Wangyi_fibonacci.class" afterPath="$PROJECT_DIR$/bin/niuke/Wangyi_fibonacci.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/niuke/Wangyi_hechangtuan.class" afterPath="$PROJECT_DIR$/bin/niuke/Wangyi_hechangtuan.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/niuke/Wangyi_tiaoshi.class" afterPath="$PROJECT_DIR$/bin/niuke/Wangyi_tiaoshi.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/niuke/Wangyi_xaicufang.class" afterPath="$PROJECT_DIR$/bin/niuke/Wangyi_xaicufang.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/niuke/Wangyi_yuanzhengshu.class" afterPath="$PROJECT_DIR$/bin/niuke/Wangyi_yuanzhengshu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/niuke/Wangyi_zifuchuangpaixu.class" afterPath="$PROJECT_DIR$/bin/niuke/Wangyi_zifuchuangpaixu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/niuke/Wangyi_zuidajiyueshu.class" afterPath="$PROJECT_DIR$/bin/niuke/Wangyi_zuidajiyueshu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/niuke/dads.class" afterPath="$PROJECT_DIR$/bin/niuke/dads.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/niuke/getPalindromeLength.class" afterPath="$PROJECT_DIR$/bin/niuke/getPalindromeLength.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/niuke/huiwenshuzu.class" afterPath="$PROJECT_DIR$/bin/niuke/huiwenshuzu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/sortAlgorithm/BubbleSort.class" afterPath="$PROJECT_DIR$/bin/sortAlgorithm/BubbleSort.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/sortAlgorithm/BucketSort.class" afterPath="$PROJECT_DIR$/bin/sortAlgorithm/BucketSort.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/sortAlgorithm/CountSort.class" afterPath="$PROJECT_DIR$/bin/sortAlgorithm/CountSort.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/sortAlgorithm/HeapSort.class" afterPath="$PROJECT_DIR$/bin/sortAlgorithm/HeapSort.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/sortAlgorithm/InsertSort.class" afterPath="$PROJECT_DIR$/bin/sortAlgorithm/InsertSort.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/sortAlgorithm/MergeSort.class" afterPath="$PROJECT_DIR$/bin/sortAlgorithm/MergeSort.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/sortAlgorithm/QuickSort.class" afterPath="$PROJECT_DIR$/bin/sortAlgorithm/QuickSort.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/sortAlgorithm/RadixSort.class" afterPath="$PROJECT_DIR$/bin/sortAlgorithm/RadixSort.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/sortAlgorithm/SelectSort.class" afterPath="$PROJECT_DIR$/bin/sortAlgorithm/SelectSort.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/sortAlgorithm/ShellSort.class" afterPath="$PROJECT_DIR$/bin/sortAlgorithm/ShellSort.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/sortAlgorithm/Swap.class" afterPath="$PROJECT_DIR$/bin/sortAlgorithm/Swap.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/structure/AdapterPatternTest.class" afterPath="$PROJECT_DIR$/bin/structure/AdapterPatternTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/structure/AdvancedMeidaPlayer.class" afterPath="$PROJECT_DIR$/bin/structure/AdvancedMeidaPlayer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/structure/AudioPlayer.class" afterPath="$PROJECT_DIR$/bin/structure/AudioPlayer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/structure/MediaAdapter.class" afterPath="$PROJECT_DIR$/bin/structure/MediaAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/structure/MediaPlayer.class" afterPath="$PROJECT_DIR$/bin/structure/MediaPlayer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/structure/Mp4Player.class" afterPath="$PROJECT_DIR$/bin/structure/Mp4Player.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/structure/VlcPlayer.class" afterPath="$PROJECT_DIR$/bin/structure/VlcPlayer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/utils/Log.class" afterPath="$PROJECT_DIR$/bin/utils/Log.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JianZhiOffer/app1_2/T3_TwoArraySearch.java" afterPath="$PROJECT_DIR$/JianZhiOffer/app1_2/T3_TwoArraySearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JianZhiOffer/app1_2/T4_ReplaceSpace.java" afterPath="$PROJECT_DIR$/JianZhiOffer/app1_2/T4_ReplaceSpace.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LeetCodeOJ.iml" afterPath="$PROJECT_DIR$/LeetCodeOJ.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NeverStopCoding/dataStructure/ListTest1.java" afterPath="$PROJECT_DIR$/NeverStopCoding/dataStructure/ListTest1.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NeverStopCoding/dataStructure/ListTest2.java" afterPath="$PROJECT_DIR$/NeverStopCoding/dataStructure/ListTest2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NeverStopCoding/niuke/Wangyi_Duilie.java" afterPath="$PROJECT_DIR$/NeverStopCoding/niuke/Wangyi_Duilie.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NeverStopCoding/sortAlgorithm/BinarySearch.java" afterPath="$PROJECT_DIR$/NeverStopCoding/sortAlgorithm/BinarySearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NeverStopCoding/sortAlgorithm/MergeSort.java" afterPath="$PROJECT_DIR$/NeverStopCoding/sortAlgorithm/MergeSort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/.gitignore" afterPath="$PROJECT_DIR$/bin/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/easy/ReverseString344.java" afterPath="$PROJECT_DIR$/src/easy/ReverseString344.java" />
     </list>
     <ignored path="LeetCodeOJ.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,23 +256,129 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="LeetCodeOJ" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="T11_Power.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/JianZhiOffer/app3/T11_Power.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="BubbleSort.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NeverStopCoding/sortAlgorithm/BubbleSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="281">
+              <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BucketSort.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NeverStopCoding/sortAlgorithm/BucketSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-58">
+              <caret line="50" column="13" lean-forward="false" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CountSort.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NeverStopCoding/sortAlgorithm/CountSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="341">
+              <caret line="46" column="26" lean-forward="false" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HeapSort.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NeverStopCoding/sortAlgorithm/HeapSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-273">
+              <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InsertSort.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NeverStopCoding/sortAlgorithm/InsertSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-90">
+              <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MergeSort.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NeverStopCoding/sortAlgorithm/MergeSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-76">
+              <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StringTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JianZhiOffer/app7/StringTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="48" column="9" lean-forward="false" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BinaryTree.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NeverStopCoding/dataStructure/BinaryTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="509">
+              <caret line="161" column="5" lean-forward="false" selection-start-line="161" selection-start-column="5" selection-end-line="161" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="T3_TwoArraySearch.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JianZhiOffer/app1_2/T3_TwoArraySearch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="59" column="18" lean-forward="false" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="T4_ReplaceSpace.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JianZhiOffer/app1_2/T4_ReplaceSpace.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="434">
+              <caret line="108" column="9" lean-forward="true" selection-start-line="108" selection-start-column="9" selection-end-line="108" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -46,11 +388,36 @@
       <projects_view />
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/JianZhiOffer/app1_2/T4_ReplaceSpace.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/easy/ReverseString344.java" />
+        <option value="$PROJECT_DIR$/NeverStopCoding/dataStructure/MyStackArray.java" />
+        <option value="$PROJECT_DIR$/NeverStopCoding/niuke/test11.java" />
+        <option value="$PROJECT_DIR$/NeverStopCoding/dataStructure/ProducerConsumer.java" />
+        <option value="$PROJECT_DIR$/JianZhiOffer/app1_2/T4_ReplaceSpace.java" />
+        <option value="$PROJECT_DIR$/JavaConcurrencyProgramming/chapter1/DeadLockDemo.java" />
+        <option value="$PROJECT_DIR$/JavaConcurrencyProgramming/chapter2/package-info.java" />
+        <option value="$PROJECT_DIR$/JavaConcurrencyProgramming/chapter2/Counter.java" />
+        <option value="$PROJECT_DIR$/JavaConcurrencyProgramming/chapter3/package-info.java" />
+        <option value="$PROJECT_DIR$/NeverStopCoding/niuke/Wangyi_Duilie.java" />
+        <option value="$PROJECT_DIR$/NeverStopCoding/sortAlgorithm/CountSort.java" />
+        <option value="$PROJECT_DIR$/JianZhiOffer/app7/StringTest.java" />
+        <option value="$PROJECT_DIR$/JianZhiOffer/app1_2/T3_TwoArraySearch.java" />
+      </list>
+    </option>
+  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -58,15 +425,8 @@
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -90,26 +450,223 @@
               <option name="myItemId" value="LeetCodeOJ" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeetCodeOJ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeetCodeOJ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeetCodeOJ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JianZhiOffer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeetCodeOJ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeetCodeOJ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JianZhiOffer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app1_2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeetCodeOJ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeetCodeOJ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="LeetCodeOJ">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="LeetCodeOJ">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/workspace/eclipse/LeetCodeOJ/NeverStopCoding/dataStructure/ProducerConsumer.java" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\eclipse\LeetCodeOJ\JavaConcurrencyProgramming\chapter3" />
+      <recent name="D:\workspace\eclipse\LeetCodeOJ\JavaConcurrencyProgramming\chapter2" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.T3_TwoArraySearch">
+    <configuration default="false" name="T4_ReplaceSpace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="app1_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="app1_2.T4_ReplaceSpace" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="LeetCodeOJ" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="DeadLockDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="chapter1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="chapter1.DeadLockDemo" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="LeetCodeOJ" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Counter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="chapter2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="chapter2.Counter" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="LeetCodeOJ" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="StringTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="app7.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="app7.StringTest" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="LeetCodeOJ" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="T3_TwoArraySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="app1_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="app1_2.T3_TwoArraySearch" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="LeetCodeOJ" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
       <method />
     </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
@@ -119,7 +676,7 @@
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
       <option name="PREFERRED_AVD" value="" />
       <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="DEBUGGER_TYPE" value="Java" />
@@ -127,14 +684,15 @@
       <option name="PREFERRED_AVD" value="" />
       <Java />
       <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
         <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
-      <method>
-        <option name="Make" enabled="true" />
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <method />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
@@ -155,7 +713,11 @@
       <option name="PREFERRED_AVD" value="" />
       <Java />
       <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
         <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
       </Profilers>
       <method>
         <option name="Make" enabled="true" />
@@ -336,6 +898,8 @@
       <setting name="cmdLine" value="run-app" />
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
@@ -351,27 +915,6 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -399,6 +942,19 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
       <envs />
       <method />
     </configuration>
@@ -472,39 +1028,17 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
+      <command value="run" />
       <scripts />
       <node-interpreter value="project" />
       <envs />
@@ -515,6 +1049,49 @@
     </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Application.T4_ReplaceSpace" />
+      <item index="1" class="java.lang.String" itemvalue="Application.DeadLockDemo" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Counter" />
+      <item index="3" class="java.lang.String" itemvalue="Application.StringTest" />
+      <item index="4" class="java.lang.String" itemvalue="Application.T3_TwoArraySearch" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.T3_TwoArraySearch" />
+        <item index="1" class="java.lang.String" itemvalue="Application.StringTest" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Counter" />
+        <item index="3" class="java.lang.String" itemvalue="Application.DeadLockDemo" />
+        <item index="4" class="java.lang.String" itemvalue="Application.T4_ReplaceSpace" />
+      </list>
+    </recent_temporary>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="GAPID_DISABLE_PCS" value="false" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method>
+        <option name="Make" enabled="true" />
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -531,41 +1108,72 @@
       <option name="presentableId" value="Default" />
       <updated>1491448814879</updated>
       <workItem from="1491448824720" duration="1442000" />
+      <workItem from="1492157084002" duration="24339000" />
+      <workItem from="1492562686816" duration="14265000" />
+      <workItem from="1492674852972" duration="19995000" />
+      <workItem from="1493177219129" duration="2562000" />
+      <workItem from="1493193745007" duration="9762000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1442000" />
+    <option name="totallyTimeSpent" value="72365000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22121535" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2505423" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15618336" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19742814" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -579,17 +1187,416 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/JianZhiOffer/app3/T11_Power.java">
+    <entry file="file://$PROJECT_DIR$/NeverStopCoding/sortAlgorithm/QuickSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="-10">
+          <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/NeverStopCoding/niuke/test11.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NeverStopCoding/dataStructure/ProducerConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="119" column="26" lean-forward="false" selection-start-line="119" selection-start-column="26" selection-end-line="119" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JianZhiOffer/app1_2/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NeverStopCoding/dataStructure/ListTest2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NeverStopCoding/dataStructure/ListTest1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeetCodeOJ.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/easy/ReverseString344.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="80" column="15" lean-forward="false" selection-start-line="80" selection-start-column="15" selection-end-line="80" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/sortAlgorithm/QuickSort.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/sortAlgorithm/CountSort.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/sortAlgorithm/SelectSort.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/sortAlgorithm/HeapSort.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/sortAlgorithm/Swap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/sortAlgorithm/BucketSort.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/sortAlgorithm/RadixSort.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/sortAlgorithm/ShellSort.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/sortAlgorithm/InsertSort.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/dataStructure/ListTest1.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/sortAlgorithm/MergeSort.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/sortAlgorithm/BubbleSort.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/dataStructure/TreeNode.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/dataStructure/ListTest2.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/dataStructure/BinaryTree.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/dataStructure/ListNode.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/structure/AdapterPatternTest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/structure/MediaPlayer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/structure/Mp4Player.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/structure/AudioPlayer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaConcurrency/chapter2/Counter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="28" column="15" lean-forward="false" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Java/jdk1.8.0_111/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="128" column="41" lean-forward="false" selection-start-line="128" selection-start-column="31" selection-end-line="128" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaConcurrency/chapter1/DeadLockDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="641">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaConcurrency/chapter2/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1449">
+          <caret line="69" column="26" lean-forward="false" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NeverStopCoding/sortAlgorithm/BinarySearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/easy/NimGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JianZhiOffer/app5/T30_GetLeastNumbers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="27" column="53" lean-forward="false" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaConcurrency/chapter3/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2394">
+          <caret line="114" column="55" lean-forward="false" selection-start-line="114" selection-start-column="55" selection-end-line="114" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NeverStopCoding/niuke/Wangyi_caodi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-391">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NeverStopCoding/niuke/Wangyi_Duilie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="49" column="1" lean-forward="false" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NeverStopCoding/sortAlgorithm/SelectSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NeverStopCoding/sortAlgorithm/BubbleSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NeverStopCoding/sortAlgorithm/BucketSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-58">
+          <caret line="50" column="13" lean-forward="false" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NeverStopCoding/sortAlgorithm/CountSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="46" column="26" lean-forward="false" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NeverStopCoding/sortAlgorithm/HeapSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-273">
+          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NeverStopCoding/sortAlgorithm/InsertSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-90">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NeverStopCoding/sortAlgorithm/MergeSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JianZhiOffer/app7/StringTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="48" column="9" lean-forward="false" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NeverStopCoding/dataStructure/BinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="161" column="5" lean-forward="false" selection-start-line="161" selection-start-column="5" selection-end-line="161" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JianZhiOffer/app1_2/T3_TwoArraySearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="59" column="18" lean-forward="false" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JianZhiOffer/app1_2/T4_ReplaceSpace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="108" column="9" lean-forward="true" selection-start-line="108" selection-start-column="9" selection-end-line="108" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

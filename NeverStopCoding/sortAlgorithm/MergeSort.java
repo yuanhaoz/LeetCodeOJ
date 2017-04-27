@@ -34,7 +34,8 @@ public class MergeSort {
 		if (left >= right) {
 			return ;
 		}
-		int mid = (left + right) / 2;
+//		int mid = (left + right) / 2;
+		int mid = (right - left) / 2 + left;
 		
 		mSort(arr, left, mid); // 递归排序左边
 		mSort(arr, mid + 1, right); // 递归排序右边
@@ -65,7 +66,7 @@ public class MergeSort {
 		}
 		
 		for (int p = 0; p < temp.length; p++) {
-			System.out.println(left + p);
+//			System.out.println(left + p);
 			arr[left + p] = temp[p];
 		}
 	}

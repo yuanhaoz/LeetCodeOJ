@@ -12,8 +12,16 @@ public class T3_TwoArraySearch {
 		int[][] array = {{1,2,8,9},{2,4,9,12},{4,7,10,13},{6,8,11,15}};
 		int target = 5;
 		System.out.println(Find(target, array));
+		System.out.println(Find2(target, array));
 		target = 7;
 		System.out.println(Find(target, array));
+		System.out.println(Find2(target, array));
+		target = 16;
+		System.out.println(Find(target, array));
+		System.out.println(Find2(target, array));
+		target = 0;
+		System.out.println(Find(target, array));
+		System.out.println(Find2(target, array));
 	}
 	
 	/**
@@ -43,6 +51,30 @@ public class T3_TwoArraySearch {
 			} else if (array[row][col] < target) {
 //				System.out.println(array[row][col] + "<" + target);
 				row++;
+			}
+		}
+		return false;
+	}
+
+	/**
+	 * 从数组左下角的数字开始
+	 *
+	 * @param target
+	 * @param array
+	 * @return
+	 */
+	public static boolean Find2(int target, int[][] array) {
+		int row = array.length;
+		int column = array[0].length;
+		int i = row - 1;
+		int j = 0;
+		while (i >= 0 && j < column) {
+			if (target < array[i][j]) {
+				i--;
+			} else if (target > array[i][j]) {
+				j++;
+			} else {
+				return true;
 			}
 		}
 		return false;
