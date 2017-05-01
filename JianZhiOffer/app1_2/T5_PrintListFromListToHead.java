@@ -1,9 +1,9 @@
 package app1_2;
 
+import bean.ListNode;
+
 import java.util.ArrayList;
 import java.util.Stack;
-
-import bean.ListNode;
 
 /**  
  * 面试题5：从尾到头打印链表
@@ -70,5 +70,18 @@ public class T5_PrintListFromListToHead {
 		}
 		return list;
 	}
+
+    public static ArrayList<Integer> printListFromTailTohead2(ListNode listNode) {
+        ArrayList<Integer> list = new ArrayList<>();
+        ListNode head = listNode;
+        if (head != null) {
+            if (head.next != null) {
+                printListFromTailTohead2(head.next);
+            }
+            list.add(head.val);
+            System.out.println(head.val);
+        }
+        return list;
+    }
 
 }

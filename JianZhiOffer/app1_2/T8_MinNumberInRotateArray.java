@@ -103,30 +103,66 @@ public class T8_MinNumberInRotateArray {
 		// 典型输入，单调升序的数组的一个旋转
 		int [] array = {3, 4, 5, 1, 2};
 		System.out.println(minNumberInRotateArray(array));
-		
+		System.out.println(minNumberInRotateArray2(array));
+		System.out.println("-------------------------------------");
+
 		// 有重复数字，并且重复的数字刚好是最小的数字
 		int [] array1 = {3, 4, 5, 1, 1, 2};
 		System.out.println(minNumberInRotateArray(array1));
-		
+		System.out.println(minNumberInRotateArray2(array1));
+		System.out.println("-------------------------------------");
+
 		// 有重复的数字，但重复的数字不是第一个数字和最后一个数字
 		int [] array2 = {3, 4, 5, 1, 2, 2};
 		System.out.println(minNumberInRotateArray(array2));
-		
+		System.out.println(minNumberInRotateArray2(array2));
+		System.out.println("-------------------------------------");
+
 		// 有重复的数字，并且重复的数字刚好是第一个数字和最后一个数字
 		int [] array3 = {1, 0, 1, 1, 1};
 		System.out.println(minNumberInRotateArray(array3));
-		
+		System.out.println(minNumberInRotateArray2(array3));
+		System.out.println("-------------------------------------");
+
 		// 单调升序数组，旋转0个元素，也就是单调升序数组本身
 		int [] array4 = {1, 2, 3, 4, 5};
 		System.out.println(minNumberInRotateArray(array4));
-		
+		System.out.println(minNumberInRotateArray2(array4));
+		System.out.println("-------------------------------------");
+
 		// 数组中只有一个数字
 		int [] array5 = {2};
 		System.out.println(minNumberInRotateArray(array5));
+		System.out.println(minNumberInRotateArray2(array5));
+		System.out.println("-------------------------------------");
 
 		// 数组中的数字都相同
 		int [] array6 = {1,1,1,1,1,1,1,1};
 		System.out.println(minNumberInRotateArray(array6));
+		System.out.println(minNumberInRotateArray2(array6));
+		System.out.println("-------------------------------------");
+	}
+
+	public static int minNumberInRotateArray2(int[] array) {
+		if (array == null || array.length == 0) {
+			throw new RuntimeException("输入数组不符合要求");
+		}
+		int left = 0;
+		int right = array.length - 1;
+		int mid = left; // 设置初始值，防止是一个有序的数组，此时直接输出mid第一个元素即可
+		while (left < right && right - left > 1) {
+			if (array[mid] == array[left] && array[mid] == array[right]) {
+				return minArray(array, left, right);
+			}
+			if (array[mid] >= array[left]) {
+				left = mid;
+			}
+			if (array[mid] <= array[right]) {
+				right = mid;
+			}
+			mid = left + (right - left) / 2;
+		}
+		return array[right];
 	}
 	
 }

@@ -107,4 +107,36 @@ public class T6_ReConstructBinaryTree {
 		return node;
 	}
 
+    /*
+    第二遍复习
+     */
+    public static TreeNode reConstructBinaryTree2(int[] pre, int[] in) {
+        if (pre == null || in == null || pre.length == 0 || in.length == 0 || pre.length != in.length) {
+            return null;
+        }
+        TreeNode root = reConstructBinaryTree2(pre, 0, pre.length - 1, in, 0, in.length - 1);
+        return root;
+    }
+
+    public static TreeNode reConstructBinaryTree2(int[] pre, int preLeft, int preRight, int[] in, int inLeft, int inRight) {
+        if (preLeft > preRight) {
+            return null;
+        }
+        TreeNode root = new TreeNode(pre[preLeft]); // 先序遍历的第一个元素为根节点
+        int val = pre[preLeft];
+        // 中序遍历数组的开始位置查找root节点在该数组的下标
+        int pos = inLeft;
+        while (pos <= inRight && in[pos] != val) {
+            pos++;
+        }
+        if (pos > inRight) { // 判断该位置是否溢出
+            throw new RuntimeException("Invalid input");
+        }
+        // 递归构造树
+        root.left = reConstructBinaryTree2(pre, preLeft + 1, preLeft + pos - inLeft, in, inLeft, pos - 1);
+        root.right = reConstructBinaryTree2(pre, preLeft + pos - inLeft + 1, preRight, in, pos + 1, inRight);
+
+        return root;
+    }
+
 }
