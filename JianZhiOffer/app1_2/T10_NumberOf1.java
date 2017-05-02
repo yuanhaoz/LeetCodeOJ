@@ -93,22 +93,45 @@ public class T10_NumberOf1 {
 		// 返回求得结果
 		return result;
 	}
-	
+
 	public static void main(String[] args){
 		System.out.println(numberOfOne(0B00000000_00000000_00000000_00000000)); // 0
-        System.out.println(numberOfOne(0B00000000_00000000_00000000_00000001)); // 1
-        System.out.println(numberOfOne(0B11111111_11111111_11111111_11111111)); // -1
+		System.out.println(numberOfOne(0B00000000_00000000_00000000_00000001)); // 1
+		System.out.println(numberOfOne(0B11111111_11111111_11111111_11111111)); // -1
 //        System.out.println(0B01111111_11111111_11111111_11111111 == Integer.MAX_VALUE);
-        System.out.println(numberOfOne(0B01111111_11111111_11111111_11111111)); // Integer.MAX_VALUE
+		System.out.println(numberOfOne(0B01111111_11111111_11111111_11111111)); // Integer.MAX_VALUE
 //        System.out.println(0B10000000_00000000_00000000_00000000 == Integer.MIN_VALUE);
-        System.out.println(numberOfOne(0B10000000_00000000_00000000_00000000)); // Integer.MIN_VALUE
+		System.out.println(numberOfOne(0B10000000_00000000_00000000_00000000)); // Integer.MIN_VALUE
 
-        System.out.println("");
-        System.out.println(numberOfOne2(0B00000000_00000000_00000000_00000000)); // 0
-        System.out.println(numberOfOne2(0B00000000_00000000_00000000_00000001)); // 1
-        System.out.println(numberOfOne2(0B11111111_11111111_11111111_11111111)); // -1
-        System.out.println(numberOfOne2(0B01111111_11111111_11111111_11111111)); // Integer.MAX_VALUE
-        System.out.println(numberOfOne2(0B10000000_00000000_00000000_00000000)); // Integer.MIN_VALUE
+		System.out.println("");
+		System.out.println(numberOfOne2(0B00000000_00000000_00000000_00000000)); // 0
+		System.out.println(numberOfOne2(0B00000000_00000000_00000000_00000001)); // 1
+		System.out.println(numberOfOne2(0B11111111_11111111_11111111_11111111)); // -1
+		System.out.println(numberOfOne2(0B01111111_11111111_11111111_11111111)); // Integer.MAX_VALUE
+		System.out.println(numberOfOne2(0B10000000_00000000_00000000_00000000)); // Integer.MIN_VALUE
+
+		System.out.println("");
+		System.out.println(numberOfOne3(9));
+		System.out.println(numberOfOne3(0B00000000_00000000_00000000_00000000)); // 0
+		System.out.println(numberOfOne3(0B00000000_00000000_00000000_00000001)); // 1
+		System.out.println(numberOfOne3(0B11111111_11111111_11111111_11111111)); // -1
+		System.out.println(numberOfOne3(0B01111111_11111111_11111111_11111111)); // Integer.MAX_VALUE
+		System.out.println(numberOfOne3(0B10000000_00000000_00000000_00000000)); // Integer.MIN_VALUE
+	}
+
+	public static int numberOfOne3(int n) {
+		if (n == 0) {
+			return 0;
+		}
+		int count = 0;
+		while (n != 0) {
+			int tmp = n & 1;
+			if (tmp == 1) {
+				count++;
+			}
+			n = n >>> 1;
+		}
+		return count;
 	}
 	
 }

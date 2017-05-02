@@ -1,7 +1,3 @@
-/easy/
-/hard/
-/medium/
-/utils/
 /app1_2/
 /app3/
 /app4/
@@ -10,11 +6,16 @@
 /app7/
 /baseJava/
 /bean/
+/behavior/
 /chapter1/
 /chapter2/
+/chapter3/
 /create/
 /dataStructure/
+/easy/
+/hard/
+/medium/
 /niuke/
 /sortAlgorithm/
 /structure/
-/chapter3/
+/utils/

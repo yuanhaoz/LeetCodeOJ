@@ -50,11 +50,12 @@ public class T9_Fibonacci {
 		System.out.println(FibonacciBetter(40));
 		System.out.println(FibonacciBetter(50));
 		System.out.println(FibonacciBetter(100));
+		System.out.println(FibonacciBetter2(100));
 		// 性能测试（如输入40、50、100等）方法2
 		System.out.println(Fibonacci(40));
 		System.out.println(Fibonacci(50)); // 当数据较大时，递归方法效率很低
 		System.out.println(Fibonacci(100));
-		
+
 	}
 	
 	/**
@@ -101,6 +102,21 @@ public class T9_Fibonacci {
 			two = sum; // 后一个数等于相加的和
 		}
 		return sum; // 返回所求结果
+	}
+
+	public static int FibonacciBetter2(int n) {
+		if (n == 0 || n == 1) {
+			return n;
+		}
+		int a = 0;
+		int b = 1;
+		int c = 0;
+		for (int i = 2; i <= n; i++) {
+			c = a + b;
+			a = b;
+			b = c;
+		}
+		return c;
 	}
 
 }
