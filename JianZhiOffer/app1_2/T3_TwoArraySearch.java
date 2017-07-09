@@ -47,5 +47,25 @@ public class T3_TwoArraySearch {
 		}
 		return false;
 	}
+	
+	public static boolean Find2(int target, int [][] array){
+		Boolean flag = false;
+		int row = array.length - 1;
+		int column = array[0].length - 1;
+		int i = 0;
+		int j = column - 1;
+		while (j >= 0 && i <= row) {
+			if (array[i][j] == target) {
+				flag = true;
+				break;
+			} else if (array[i][j] > target) {
+				j--;
+			} else {
+				i++;
+			}
+		}
+		
+		return flag;
+	}
 
 }
