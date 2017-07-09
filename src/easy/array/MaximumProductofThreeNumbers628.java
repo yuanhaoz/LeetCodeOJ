@@ -5,6 +5,6 @@ package easy.array;
  */
 public class MaximumProductofThreeNumbers628 {
 
-    
+
 
 }
