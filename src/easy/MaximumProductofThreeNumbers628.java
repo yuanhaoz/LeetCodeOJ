@@ -17,6 +17,7 @@ The length of the given array will be in range [3,104] and all elements are in t
 Multiplication of any three numbers in the input won't exceed the range of 32-bit signed integer.
  * @author 郑元浩
  * @date 2017年7月9日 下午6:11:38
+ * 
  *
  */
 public class MaximumProductofThreeNumbers628 {
