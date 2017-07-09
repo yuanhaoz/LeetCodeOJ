@@ -3,6 +3,7 @@
 /app4/
 /app5/
 /app6/
+<<<<<<< HEAD
 /baseJava/
 /bean/
 /behavior/
@@ -16,3 +17,7 @@
 /structure/
 /utils/
 /test/
+=======
+/dataStructure/
+/sortAlgorithm/
+>>>>>>> 7f2eca733d7f9351693b7122702d5e664bf06213

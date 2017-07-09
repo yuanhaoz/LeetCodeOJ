@@ -6,7 +6,12 @@
       <sourceFolder url="file://$MODULE_DIR$/DesignPattern" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/JianZhiOffer" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NeverStopCoding" isTestSource="false" />
+<<<<<<< HEAD
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+=======
+      <sourceFolder url="file://$MODULE_DIR$/JianZhiOffer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DesignPattern" isTestSource="false" />
+>>>>>>> 7f2eca733d7f9351693b7122702d5e664bf06213
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
