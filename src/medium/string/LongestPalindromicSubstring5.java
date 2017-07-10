@@ -30,7 +30,6 @@ public class LongestPalindromicSubstring5 {
 //		System.out.println(l.longestPalindrome(str3));
 //		String str4 = "abkfd";
 //		System.out.println(l.longestPalindrome(str4));
-
 	}
 	
 	
