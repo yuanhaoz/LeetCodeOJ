@@ -1,23 +1,7 @@
 /app1_2/
 /app3/
 /app4/
-/app5/
-/app6/
-<<<<<<< HEAD
-/baseJava/
-/bean/
 /behavior/
 /create/
-/dataStructure/
-/easy/
-/hard/
-/medium/
-/niuke/
-/sortAlgorithm/
 /structure/
-/utils/
-/test/
-=======
-/dataStructure/
-/sortAlgorithm/
->>>>>>> 7f2eca733d7f9351693b7122702d5e664bf06213
+/easy/
