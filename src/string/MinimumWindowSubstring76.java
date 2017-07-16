@@ -1,11 +1,12 @@
-package hard;
+package string;
 /**  
  * 76. Minimum Window Substring   Add to List QuestionEditorial Solution  My Submissions
 Total Accepted: 84448
 Total Submissions: 356362
 Difficulty: Hard
 Contributors: Admin
-Given a string S and a string T, find the minimum window in S which will contain all the characters in T in complexity O(n).
+Given a string S and a string T, find the minimum window in S which will contain 
+all the characters in T in complexity O(n).
 
 For example,
 S = "ADOBECODEBANC"
@@ -15,7 +16,8 @@ Minimum window is "BANC".
 Note:
 If there is no such window in S that covers all characters in T, return the empty string "".
 
-If there are multiple such windows, you are guaranteed that there will always be only one unique minimum window in S.   
+If there are multiple such windows, you are guaranteed that there will always be 
+only one unique minimum window in S.   
  *  
  * @author 郑元浩 
  * @date 2017年1月2日 下午8:40:04 

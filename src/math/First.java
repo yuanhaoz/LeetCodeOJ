@@ -1,4 +1,4 @@
-package hard;
+package math;
 
 public class First {
 
@@ -14,7 +14,7 @@ public class First {
 		while(seq != 2333){
 			if( a%2 == 0 || a%3 == 0){
 				seq++;
-				System.out.println("ÊýÎª£º" + a + "\tÐòºÅÎª£º" + seq);
+				System.out.println("ï¿½ï¿½Îªï¿½ï¿½" + a + "\tï¿½ï¿½ï¿½Îªï¿½ï¿½" + seq);
 			}
 			a++;
 		}

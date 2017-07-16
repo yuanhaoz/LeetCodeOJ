@@ -1,4 +1,4 @@
-package easy.math;
+package math;
 
 /**
  * 7. Reverse Integer
