@@ -1,4 +1,4 @@
-package medium.hashtable;
+package hashtable;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package medium.string;
+package string;
 
 /**
  *  
