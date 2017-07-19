@@ -10,7 +10,8 @@ Example2: x = -123, return -321
 click to show spoilers.
 
 Note:
-The input is assumed to be a 32-bit signed integer. Your function should return 0 when the reversed integer overflows.
+The input is assumed to be a 32-bit signed integer. 
+Your function should return 0 when the reversed integer overflows.
  * @author 郑元浩
  * @date 2017年7月12日 下午6:19:13
  *
