@@ -1,4 +1,4 @@
-package medium;
+package backtracing;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -40,23 +40,37 @@ public class CombinationSum39 {
 		Log.logTwoList(list);
 	}
 	
+	/**
+	 * 回溯法解决：考虑所有情况
+	 * @param candidates
+	 * @param target
+	 * @return
+	 */
 	public static List<List<Integer>> combinationSum(int[] candidates, int target) {
 		List<List<Integer>> list = new ArrayList<List<Integer>>();
-		Arrays.sort(candidates);
+		Arrays.sort(candidates); // 对数组排序
 		backtrack(list, new ArrayList<Integer>(), candidates, target, 0);
 		return list;
     }
 	
+	/**
+	 * 数组每个元素可以使用多次，因此回溯的时候应该考虑本元素
+	 * @param list 返回的结果，包含所有情况
+	 * @param tempList 暂存中间结果，如果总和小于目标值则继续添加，等于就添加该list，大于就退出该次回溯，从链表头删除最后一个节点
+	 * @param candidates 原数组
+	 * @param remain 剩余的数，每遍历一个数就用target减去它
+	 * @param start 遍历到数组元素的第几个元素
+	 */
 	public static void backtrack(List<List<Integer>> list, List<Integer> tempList, int[] candidates, int remain, int start){
-		if (remain < 0) {
+		if (remain < 0) { // 大于就退出循环
 			return;
-		} else if (remain == 0) {
+		} else if (remain == 0) { // 等于说明满足条件添加本次条件
 			list.add(new ArrayList<Integer>(tempList));
-		} else {
-			for (int i = start; i < candidates.length; i++) {
-				tempList.add(candidates[i]);
-				backtrack(list, tempList, candidates, remain - candidates[i], i);
-				tempList.remove(tempList.size() - 1);
+		} else { // 否则进行回溯
+			for (int i = start; i < candidates.length; i++) { // 从start元素开始，每次回溯更新
+				tempList.add(candidates[i]); // 添加该元素
+				backtrack(list, tempList, candidates, remain - candidates[i], i); // 回溯，更新剩余的数  和  数组的起始位置
+				tempList.remove(tempList.size() - 1); // 去除数组的最后一个元素
 			}
 		}
 	}
