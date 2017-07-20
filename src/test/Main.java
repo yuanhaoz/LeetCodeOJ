@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class Main{
     public static void main(String[] args){
-        Scanner in = new Scanner(System.in);
+        @SuppressWarnings("resource")
+		Scanner in = new Scanner(System.in);
         int m, n;
 //        String nm = in.nextLine();
 //        String[] nms = nm.split(" ");
