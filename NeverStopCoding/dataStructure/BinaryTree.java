@@ -44,11 +44,13 @@ public class BinaryTree {
 		TreeNode t5 = new TreeNode(5);
 		root.left = t2;
 		root.right = t3;
-		t2.left = t4;
-		t2.right = t5;
+		t3.left = t4;
+		t3.right = t5;
 		
-		System.out.println(getNodeNumRec(root));
-		System.out.println(getNodeNum(root));
+//		System.out.println(getNodeNumRec(root));
+//		System.out.println(getNodeNum(root));
+		postorderTraversalRec(root);
+		postorderTraversal(root);
 
 	}
 	
@@ -221,7 +223,7 @@ public class BinaryTree {
 			if (!stack.isEmpty()) {
 				// 因为此时已经没有左孩子了，所以输出栈顶元素
 				cur = stack.pop();
-				System.err.println(cur.val + " ");
+				System.out.println(cur.val + " ");
 				cur = cur.right; // 准备处理右子树
 			}
 		}
@@ -262,10 +264,10 @@ public class BinaryTree {
     		if (cur.right != null) {
 				stack.push(cur.right);
 			}
-    		while (!output.isEmpty()) {
-				System.out.print(output.pop().val + " ");
-			}
     	}
+    	while (!output.isEmpty()) {
+			System.out.print(output.pop().val + " ");
+		}
     }
     
     /**
@@ -455,8 +457,8 @@ public class BinaryTree {
 			return null;
 		}
     	
-    	TreeNode left = mirrorRec(root.left);
-    	TreeNode right = mirrorRec(root.right);
+    	TreeNode left = mirrorRec(root.right);
+    	TreeNode right = mirrorRec(root.left);
     	
     	root.left = left;
     	root.right = right;

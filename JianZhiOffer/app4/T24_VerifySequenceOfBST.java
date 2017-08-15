@@ -41,32 +41,26 @@ public class T24_VerifySequenceOfBST {
      * @return true：该数组是某二叉搜索树的后序遍历的结果。false：不是
 	 */
 	public static boolean verifySequenceOfBST(int[] sequence, int start, int end){
-		int root = sequence[end]; // 最后一个结点为根节点
-		// 遍历前半部分，值比根节点小，因此找到第一个比根节点值大的点就退出
-		int i = start;
-		for (;i <= end; i++) {
-			if (sequence[i] > root) {
-				break;
-			}
-		}
-		// 遍历后半部分，如果存在比根节点小的就返回false，不是二叉搜索树
-		int j = i;
-		for (; j <= end; j++) {
-			if (sequence[j] < root) {
-				return false;
-			}
-		}
-		// 再判断左右子树
-		boolean result1 = true;
-		boolean result2 = true;
-		if (i < start) {
-			result1 = verifySequenceOfBST(sequence, i, start);
-		}
-		if (end > j) {
-			result2 = verifySequenceOfBST(sequence, j, end);
-		}
-		return result1 && result2;
-	}
+        if (start >= end) { // 只有一个元素
+            return true;
+        }
+        int root = sequence[end];
+        // 遍历左子树，此时i的值为右子树的第一个节点
+        int i = start;
+        while (i < end && sequence[i] < root) {
+            i++;
+        }
+        // 遍历右子树，正确的话j的值应该是end
+        int j = i;
+        while (j < end && sequence[j] > root) {
+            j++;
+        }
+        if (j != end) {
+            return false;
+        }
+        // 递归判断左右子树
+        return verifySequenceOfBST(sequence, start, i - 1) && verifySequenceOfBST(sequence, i, end - 1);
+    }
 	
 	public static void main(String[] args) {
 		// 正常测试
@@ -74,6 +68,8 @@ public class T24_VerifySequenceOfBST {
 		System.out.println("true: " + verifySequenceOfBST(sequence));
 		int[] sequence1 = {7, 4, 6, 5};
 		System.out.println("false: " + verifySequenceOfBST(sequence1));
+		int[] sequence2 = {7, 4, 6, 5, 9, 11, 10, 8};
+		System.out.println("false: " + verifySequenceOfBST(sequence2));
 		// 只有左子树
 		int[] data3 = {1, 2, 3, 4, 5};
         System.out.println("true: " + verifySequenceOfBST(data3));

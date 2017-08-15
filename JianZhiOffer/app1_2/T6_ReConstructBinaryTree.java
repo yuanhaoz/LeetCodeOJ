@@ -106,5 +106,5 @@ public class T6_ReConstructBinaryTree {
 		// 返回创建的根节点
 		return node;
 	}
-
+	
 }
