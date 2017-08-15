@@ -1,6 +1,7 @@
 package app3;
 /**  
- * 类说明   
+ * 面试题11：实现函数  double Power(double base, int exponent)，求base的exponent次方。
+ * 不得使用库函数，同时不需要考虑大数问题。 
  *  
  * @author 郑元浩 
  * @date 2017年3月15日 下午8:05:28 

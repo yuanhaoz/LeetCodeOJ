@@ -38,7 +38,7 @@ public class T8_MinNumberInRotateArray {
 	 * @param array 旋转数组
 	 * @return 数组的最小值
 	 */
-	public static int minNumberInRotateArray(int [] array) {
+	public static int minNumberInRotateArray(int[] array) {
 		// 判断输入是否合法
 	    if (array == null || array.length == 0) {
 	    	return 0;
