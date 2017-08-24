@@ -52,7 +52,7 @@ public class T33_PrintMinNumber {
 		if (start < end) {
 			String pivot = array[start];
 			int left = start;
-//			int right = end;
+			int right = end;
 			while (start < end) {
 				while (start < end && comparator.compare(array[end], pivot) >= 0) {
 					end--;
@@ -65,7 +65,7 @@ public class T33_PrintMinNumber {
 			}
 			array[start] = pivot;
 			quickSort(array, left, start - 1, comparator);
-			quickSort(array, start + 1, end, comparator);
+			quickSort(array, start + 1, right, comparator);
 		}
 	}
 	

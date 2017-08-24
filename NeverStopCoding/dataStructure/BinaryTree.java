@@ -171,19 +171,37 @@ public class BinaryTree {
     	if (root == null) {
 			return ;
 		}
-    	Stack<TreeNode> stack = new Stack<TreeNode>(); // 辅助栈
-    	stack.push(root);
-    	while (!stack.isEmpty()) {
-			TreeNode cur = stack.pop(); // 出栈栈顶元素
-			System.out.print(cur.val + " ");
-			// 关键点：要先压入右孩子，再压入左孩子
-			if (cur.right != null) {
-				stack.push(cur.right);
+    	Stack<TreeNode> stack = new Stack<TreeNode>();
+    	TreeNode cur = root;
+    	
+    	while (cur != null || !stack.isEmpty()) {
+			while (cur != null) { // 先添加一个非空节点所有的左孩子到栈
+				stack.push(cur);
+				System.out.println(cur.val + " ");
+				cur = cur.left;
 			}
-			if (cur.left != null) {
-				stack.push(cur.left);
+			if (!stack.isEmpty()) {
+				// 因为此时已经没有左孩子了，所以输出栈顶元素
+				cur = stack.pop();
+				cur = cur.right; // 准备处理右子树
 			}
 		}
+//    	if (root == null) {
+//			return ;
+//		}
+//    	Stack<TreeNode> stack = new Stack<TreeNode>(); // 辅助栈
+//    	stack.push(root);
+//    	while (!stack.isEmpty()) {
+//			TreeNode cur = stack.pop(); // 出栈栈顶元素
+//			System.out.print(cur.val + " ");
+//			// 关键点：要先压入右孩子，再压入左孩子
+//			if (cur.right != null) {
+//				stack.push(cur.right);
+//			}
+//			if (cur.left != null) {
+//				stack.push(cur.left);
+//			}
+//		}
     }
     
     /**
