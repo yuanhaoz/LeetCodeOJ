@@ -32,7 +32,7 @@ public class T26_CloneNodes {
 		}
 		ComplexListNode tmp = root;
 		while (tmp != null) {
-			ComplexListNode copyTmp = tmp;
+			ComplexListNode copyTmp = new ComplexListNode(root.val); // 值等于原来节点
 			copyTmp.next = tmp.next;
 			tmp.next = copyTmp;
 			tmp = copyTmp.next;
@@ -52,8 +52,7 @@ public class T26_CloneNodes {
 		while (tmp != null) {
 			ComplexListNode copyTmp = tmp.next;
 			if (tmp.sibling != null) {
-				ComplexListNode tmpSibling = tmp.sibling;
-				copyTmp.sibling = tmpSibling.next;
+				copyTmp.sibling = tmp.sibling.next;
 			}
 			tmp = copyTmp.next;
 		}

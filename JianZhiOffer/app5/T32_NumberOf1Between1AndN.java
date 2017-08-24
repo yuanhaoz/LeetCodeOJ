@@ -63,7 +63,7 @@ public class T32_NumberOf1Between1AndN {
      * @return 1的个数
      */
 	public static int numberOf1(int[] numbers, int curIndex) {
-		if (numbers == null || curIndex >= numbers.length || curIndex > 0) {
+		if (numbers == null || curIndex >= numbers.length || curIndex < 0) {
 			return 0;
 		}
 		// 待处理的第一个数字
@@ -81,7 +81,7 @@ public class T32_NumberOf1Between1AndN {
 		// 假设numbers是21345
 		// numFirstDigit是数字10000-19999的第一位中的数目
 		int numFirstDigit = 0;
-		// 如果最高位不是1，如21345，在[1236，21345]中，最高位1出现的只在[10000, 19999]中，出现的次数是10^4
+		// 如果最高位不是1，如21345，在[1346，21345]中，最高位1出现的只在[10000, 19999]中，出现的次数是10^4
 		if (first > 1) {
 			numFirstDigit = powerBase10(length - 1);
 		}
@@ -89,7 +89,7 @@ public class T32_NumberOf1Between1AndN {
 		else if (first == 1) {
 			numFirstDigit = atoi(numbers, curIndex + 1) + 1;
 		}
-		// numOtherDigits，是[1346,21345]中，除了第一位之外（不看21345中的第一位2）的数位中的1的数目
+		// numOtherDigits，是[1346,21345]中，除了第一位之外（不看21345中的第一位2）的数位中的1的数目，排列组合 
 		int numOtherDigits = first * (length - 1) * powerBase10(length - 2);
 		// numRecursive是1-1234中1的数目
 		int numRecursive = numberOf1(numbers, curIndex + 1);
@@ -106,7 +106,7 @@ public class T32_NumberOf1Between1AndN {
 	public static int atoi(int[] numbers, int i) {
 		int result = 0;
 		for (int j = i; j < numbers.length; j++) {
-			result = (result * 10 + numbers[j]);
+			result = result * 10 + numbers[j];
 		}
 		return result;
 	}
