@@ -110,7 +110,7 @@ public class T43_printProbability {
 		// 标记当前要使用的是第0个数组还是第1个数组
 		int flag = 0;
 		// 抛出一个骰子时出现的各种情况
-		for (int i = 0; i <= max; i++) {
+		for (int i = 1; i <= max; i++) {
 			probabilities[flag][i] = 1;
 		}
 		// 抛出其它骰子

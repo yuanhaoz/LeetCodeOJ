@@ -57,7 +57,7 @@ public class T36_InversePairs {
 		}
 		// 归并排序处理剩余的前半段数组
 		for ( ;i >= start; --i) {
-			copy[indexCopy--] = data[j];
+			copy[indexCopy--] = data[i];
 		}
 		// 归并排序处理剩余的后半段数组
 		for (; j >= start + mid + 1; --j) {

@@ -2,6 +2,9 @@ package app6;
 /**  
  * 面试题49：  把字符串转换成整数，不使用库函数
  *  
+ * 1. 判断第一个字符是 '+', '-' 还是 数字
+ * 2. 计算的过程判断是否超出整数表示范围
+ *  
  * @author 郑元浩 
  * @date 2017年4月6日 上午10:17:00 
  */
@@ -33,7 +36,7 @@ public class T49_StringToInt {
 			return parseString(num, 1, false);
 		} else if (first == '+') {
 			return parseString(num, 1, true);
-		} else if (first <= '9' && first >= '0') {
+		} else if (isDigit(first)) {
 			return parseString(num, 0, true);
 		} else {
 			throw new NumberFormatException(num);
