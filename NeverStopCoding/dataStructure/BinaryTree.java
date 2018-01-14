@@ -49,6 +49,7 @@ public class BinaryTree {
 		
 		System.out.println(getNodeNumRec(root));
 		System.out.println(getNodeNum(root));
+		System.out.println(getNodeNumKthLevelRec(root, 3));
 
 	}
 	
@@ -221,7 +222,7 @@ public class BinaryTree {
 			if (!stack.isEmpty()) {
 				// 因为此时已经没有左孩子了，所以输出栈顶元素
 				cur = stack.pop();
-				System.err.println(cur.val + " ");
+				System.out.println(cur.val + " ");
 				cur = cur.right; // 准备处理右子树
 			}
 		}
@@ -458,8 +459,8 @@ public class BinaryTree {
     	TreeNode left = mirrorRec(root.left);
     	TreeNode right = mirrorRec(root.right);
     	
-    	root.left = left;
-    	root.right = right;
+    	root.left = right;
+    	root.right = left;
     	
     	return root;
     }

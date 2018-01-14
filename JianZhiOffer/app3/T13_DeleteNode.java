@@ -76,4 +76,24 @@ public class T13_DeleteNode {
 		return head; // 返回删除结点后的链表头结点
 	}
 
+	public static ListNode deleteNode2(ListNode head, ListNode toBeDeleted) {
+		if (head == null || toBeDeleted == null) {
+			return head;
+		}
+		if (toBeDeleted == head) { // 删除结点是头结点
+			return head.next;
+		}
+		if (toBeDeleted.next == null) { // 删除结点是尾节点
+			ListNode tmp = head;
+			while (tmp.next != toBeDeleted) {
+				tmp = tmp.next;
+			}
+			tmp.next = null;
+			return head;
+		}
+		toBeDeleted.val = toBeDeleted.next.val;
+		toBeDeleted.next = toBeDeleted.next.next;
+		return head;
+	}
+
 }

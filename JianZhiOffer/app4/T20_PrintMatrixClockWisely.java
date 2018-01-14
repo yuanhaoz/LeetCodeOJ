@@ -44,31 +44,82 @@ public class T20_PrintMatrixClockWisely {
 		int endX = row - start - 1; // 结束的行位置
 		// 打印从左到右的元素
 		for (int i = start; i <= endY; i++) {
-			System.out.println(numbers[start][i]);
+			System.out.print(numbers[start][i]);
 		}
 		// 打印从上到下的元素，条件是至少存在两列
 		if (endX > start) {
 			for (int i = start + 1; i <= endX; i++) {
-				System.out.println(numbers[i][endY]);
+				System.out.print(numbers[i][endY]);
 			}
 		}
 		// 打印从右到左的元素，条件是至少存在两行两列
 		if (endX > start && endY > start) {
 			for (int i = endY - 1; i >= start; i--) {
-				System.out.println(numbers[endX][i]);
+				System.out.print(numbers[endX][i]);
 			}
 		}
 		// 打印从下到上的元素，条件是至少存在三行两列
 		if (endX > start + 1 && endY > start) {
 			for (int i = endX - 1; i >= start + 1; i--) {
-				System.out.println(numbers[i][start]);
+				System.out.print(numbers[i][start]);
 			}
 		}
 	}
 
 	public static void main(String[] args) {
 		int[][] numbers = {{1,2,3},{8,9,4},{7,6,5}};
-		printMatrixClockWisely(numbers);
+//		printMatrixClockWisely(numbers);
+		printMatrixClockWisely2(numbers);
+	}
+
+	/**
+	 * 循环打印数组元素
+	 * @param numbers
+	 */
+	public static void printMatrixClockWisely2(int[][] numbers) {
+		if (numbers == null) {
+			return ;
+		}
+		int row = numbers.length; // 行数
+		int column = numbers[0].length; // 列数
+		int circle = Math.min(row/2, column/2); // 循环打印的圈数
+		for (int i = 0; i <= circle; i++) { // 循环打印每圈元素的值
+			printOneCircle2(numbers, i, row, column);
+		}
+	}
+
+	/**
+	 * 打印一圈数组元素的值
+	 * @param numbers 数组元素
+	 * @param i 起始元素下标
+	 * @param row 数组总行数
+	 * @param column 数组中列数
+	 */
+	public static void printOneCircle2(int[][] numbers, int i, int row, int column) {
+		// 设置本圈元素的起始和终止位置
+		int startX = i;
+		int endX = row - i - 1;
+		int startY = i;
+		int endY = column - i - 1;
+		for (int j = startY; j <= endY; j++) {
+			System.out.print(numbers[startX][j] + " ");
+		}
+		if (endX > startX) {
+			for (int j = startX + 1; j <= endX; j++) {
+				System.out.print(numbers[j][endY] + " ");
+			}
+		}
+		if (endX > startX && endY > startY) {
+			for (int j = endY - 1; j >= startY; j--) {
+				System.out.print(numbers[endX][j] + " ");
+			}
+		}
+		if (endX > startX + 1 && endY > startY) {
+			for (int j = endX - 1; j >= startX + 1; j--) {
+				System.out.print(numbers[j][startY] + " ");
+			}
+		}
+
 	}
 
 }

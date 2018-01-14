@@ -23,7 +23,7 @@ public class TreeNode {
 		
 	}
 
-    public static void traversal(TreeNode root) {
+    public void traversal(TreeNode root) {
         Queue<TreeNode> queue = new LinkedList<>();
         TreeNode node = root;
         queue.offer(node);
@@ -56,7 +56,7 @@ public class TreeNode {
         r3.left = r5;
         r3.right = r6;
         r6.left = r8;
-        traversal(r1);
+        r1.traversal(r1);
     }
 
 }

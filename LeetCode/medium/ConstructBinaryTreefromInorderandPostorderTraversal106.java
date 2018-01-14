@@ -71,7 +71,7 @@ public class ConstructBinaryTreefromInorderandPostorderTraversal106 {
         int[] inorder = {4, 7, 2, 1, 5, 3, 8, 6};
         int[] postorder = {7, 4, 2, 5, 8, 6, 3, 1};
         TreeNode root = buildTree(inorder, postorder);
-        TreeNode.traversal(root);
+        root.traversal(root);
     }
 
 }

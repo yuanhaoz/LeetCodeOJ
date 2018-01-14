@@ -71,4 +71,6 @@ public class QuickSort {
 		return left;
 	}
 
+//	public static int partition(int[] arr, int )
+
 }

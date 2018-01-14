@@ -47,25 +47,58 @@ public class T14_ReorderOddEven {
 			}
 		}
 	}
+
+	public static void reorderOddEven2(int[] arr) {
+		// 对于输入的数组为空，或者长度小于2的直接返回
+		if (arr.length == 0 || arr.length == 1) {
+			return ;
+		}
+
+		int left = 0;
+		int right = arr.length - 1;
+		while (left < right) {
+			while (left< right && judge(arr[left])) {
+				left++;
+			}
+			while (left< right && !judge(arr[right])) {
+				right--;
+			}
+			if (left < right) { // 判断移动之后left小于right才进行交换
+				int tmp = arr[left];
+				arr[left] = arr[right];
+				arr[right] = tmp;
+			}
+		}
+	}
+
+	/**
+	 * 判断一个数是否是奇数
+	 * 通用函数：可以用来替换判断条件，例如把数组中负数排在非负数前面，把能被3整除的数排在不能被3整除的数前面
+	 * @param number
+	 * @return true表示为奇数
+	 */
+	public static boolean judge(int number) {
+		return (number & 1) == 1;
+	}
 	
 	public static void main(String[] args) {
 		int[] arr = {};
-		reorderOddEven(arr);
+		reorderOddEven2(arr);
 		System.out.println(Arrays.toString(arr));
 		int[] arr1 = {1};
-		reorderOddEven(arr1);
+		reorderOddEven2(arr1);
 		System.out.println(Arrays.toString(arr1));
 		int[] arr2 = {1,2};
-		reorderOddEven(arr2);
+		reorderOddEven2(arr2);
 		System.out.println(Arrays.toString(arr2));
 		int[] arr3 = {1,3,5,2,4,6};
-		reorderOddEven(arr3);
+		reorderOddEven2(arr3);
 		System.out.println(Arrays.toString(arr3));		
 		int[] arr4 = {2,4,6,1,3,5};
-		reorderOddEven(arr4);
+		reorderOddEven2(arr4);
 		System.out.println(Arrays.toString(arr4));
 		int[] arr5 = {1,2,3,4,5,6};
-		reorderOddEven(arr5);
+		reorderOddEven2(arr5);
 		System.out.println(Arrays.toString(arr5));	
 	}
 

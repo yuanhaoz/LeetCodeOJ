@@ -58,6 +58,35 @@ public class T18_HasSubtree {
 		return false;
 	}
 
+	public static boolean hasSubTree2(TreeNode root1, TreeNode root2){
+		boolean result = false; // 用于判断是否包含子结构
+		if (root1 != null && root2 != null) { // 判断根节点不为空
+			if (root1.val == root2.val) { // 首先得到相同的根节点，然后再在相同的根节点的子树结构中判断是不是存在重复的元素
+				result = doesTree1HaveTree2(root1, root2);
+			}
+			if (!result) { // 如果该根节点不对，则访问其左子树
+				result = hasSubTree(root1.left, root2);
+			}
+			if (!result) { // 如果该根节点和左子树都不包含，则访问右子树
+				result = hasSubTree(root1.right, root2);
+			}
+		}
+		return result;
+	}
+
+	public static boolean doesTree1HaveTree22(TreeNode root1, TreeNode root2){
+		if (root2 == null) {
+			return true;
+		}
+		if (root1 == null) {
+			return false;
+		}
+		if (root1.val == root2.val) {
+			return doesTree1HaveTree22(root1.left, root2.left) && doesTree1HaveTree22(root1.right, root2.right);
+		}
+		return false;
+	}
+
 	public static void main(String[] args) {
 		TreeNode root1 = new TreeNode(8);
         root1.right = new TreeNode(7);
@@ -72,11 +101,17 @@ public class T18_HasSubtree {
         root2.right = new TreeNode(2);
 
         System.out.println(hasSubTree(root1, root2));
+        System.out.println(hasSubTree2(root1, root2));
         System.out.println(hasSubTree(root2, root1));
+        System.out.println(hasSubTree2(root2, root1));
         System.out.println(hasSubTree(root1, root1.left));
+        System.out.println(hasSubTree2(root1, root1.left));
         System.out.println(hasSubTree(root1, null));
+        System.out.println(hasSubTree2(root1, null));
         System.out.println(hasSubTree(null, root2));
+        System.out.println(hasSubTree2(null, root2));
         System.out.println(hasSubTree(null, null));
+        System.out.println(hasSubTree2(null, null));
 	}
 
 }

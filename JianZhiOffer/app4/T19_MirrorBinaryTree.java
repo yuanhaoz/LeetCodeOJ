@@ -40,4 +40,42 @@ public class T19_MirrorBinaryTree {
 		
 	}
 
+	/**
+	 * 递归的解法
+	 * @param root
+	 */
+	public static void MirrorRecursively2(TreeNode root) {
+		if (root == null || (root.left == null && root.right == null)) {
+			return ;
+		}
+		TreeNode temp = root.left;
+		root.left = root.right;
+		root.right = temp;
+		if (root.left != null) {
+			MirrorRecursively2(root.left);
+		} else if (root.right != null) {
+			MirrorRecursively2(root.right);
+		}
+	}
+
+	public static void main(String[] args) {
+		TreeNode r1 = new TreeNode(1);
+		TreeNode r2 = new TreeNode(2);
+		TreeNode r3 = new TreeNode(3);
+		TreeNode r4 = new TreeNode(4);
+		TreeNode r5 = new TreeNode(5);
+		TreeNode r6 = new TreeNode(6);
+		TreeNode r7 = new TreeNode(7);
+		TreeNode r8 = new TreeNode(8);
+		r1.left = r2;
+		r1.right = r3;
+		r2.left = r4;
+		r4.left = r7;
+		r3.left = r5;
+		r3.right = r6;
+		r6.left = r8;
+		MirrorRecursively2(r1);
+		r1.traversal(r1);
+	}
+
 }

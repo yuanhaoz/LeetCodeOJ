@@ -86,6 +86,40 @@ public class T17_MergeList {
 		return tmp;
 	}
 
+	/**
+	 *
+	 * @param head1
+	 * @param head2
+	 * @return
+	 */
+	public static ListNode mergeList3(ListNode head1, ListNode head2) {
+		if (head1 == null) {
+			return head2;
+		}
+		if (head2 == null) {
+			return head1;
+		}
+		ListNode newHead = new ListNode();
+		ListNode tmp = newHead;
+		while (head1 != null && head2 != null) {
+			if (head1.val < head2.val) {
+				tmp.next = head1;
+				head1 = head1.next;
+			} else {
+				tmp.next = head2;
+				head2 = head2.next;
+			}
+			tmp = tmp.next;
+		}
+		if (head1 != null) {
+			tmp.next = head1;
+		}
+		if (head2 != null) {
+			tmp.next = head2;
+		}
+		return newHead.next;
+	}
+
 	public static void main(String[] args) {
 		ListNode l1 = new ListNode(1);
 		ListNode l2 = new ListNode(3);
@@ -104,8 +138,8 @@ public class T17_MergeList {
 		l7.next = l8;
 		
 		ListNode l9 = null;
-//		ListNode.printList(mergeList(l1, l5));
-		ListNode.printList(mergeList(l9, l5));
+		ListNode.printList(mergeList3(l1, l5));
+//		ListNode.printList(mergeList(l9, l5));
 	}
 
 }

@@ -14,7 +14,8 @@ package app3;
 public class T12_PrintOneToNthDigits {
 
 	public static void main(String[] args) {
-		printOneToNthDigits(2);
+//		printOneToNthDigits(2);
+		printOneToNthDigits2(2);
 //		printOneToNthDigits(0);
 //		printOneToNthDigits(2);
 	}
@@ -90,6 +91,57 @@ public class T12_PrintOneToNthDigits {
 		if (index < arr.length) {
 			System.out.println();
 		}
+	}
+
+	/**
+	 * 打印数组从1到n的所有元素
+	 * @param n
+	 */
+	public static void printOneToNthDigits2(int n) {
+		if (n < 1) {
+			return;
+		}
+		int[] arr = new int[n];
+		while (!addOne2(arr)){
+			printArray2(arr);
+		}
+	}
+
+	/**
+	 * 数组加1模拟数字加1的动作
+	 * @param arr
+	 * @return 数组加1之后是否为n+1
+	 */
+	public static boolean addOne2(int[] arr) {
+		int carry = 1; // 进位，第一次加1
+		int index = arr.length; // 最后一位数字的下标
+		do {
+			index--; // 移动下标到最后一个数字
+			int sum = arr[index] + carry; // 加1之后的值
+			carry = sum / 10; // 加1之后的进位
+			arr[index] = sum % 10; // 加1之后的余数为数组该元素的新值
+		} while (carry == 1 && index > 0); // 进位为1并且不是第一个元素时继续运算
+		if (carry == 1 && index == 0) { // 进位为1并且为第一个元素
+			return true;
+		}
+		return false;
+	}
+
+	/**
+	 * 打印数组元素：从第一个非0元素开始打印
+	 * @param arr
+	 */
+	public static void printArray2(int[] arr) {
+		int index = 0;
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[index] == 0) {
+				index++;
+			}
+		}
+		for (int i = index; i < arr.length; i++) {
+			System.out.print(arr[i]);
+		}
+		System.out.println();
 	}
 	
 }

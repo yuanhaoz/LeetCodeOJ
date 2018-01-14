@@ -53,7 +53,24 @@ public class T16_ReverseList {
 		l1.next = l2;
 		l2.next = l3;
 		l3.next = l4;
-		ListNode.printList(reverseList(l1));
+//		ListNode.printList(reverseList(l1));
+		ListNode.printList(reverseList2(l1));
+	}
+
+	public static ListNode reverseList2(ListNode head){
+		if (head == null) {
+			return null;
+		}
+		ListNode current = head; // 遍历原链表
+		ListNode next = null; // 链表下一个节点为空
+		ListNode newHead = null; // 新链表的头结点
+		while (current != null) { // 遍历不为空
+			next = current.next; // 保留下一个要遍历的节点
+			current.next = newHead; // 将当前节点连接到下一个结点
+			newHead = current; // 设置新的头结点内容
+			current = next; // 更新遍历的节点为下一个结点
+		}
+		return newHead;
 	}
 
 }

@@ -69,4 +69,25 @@ public class T15_FindKthToTail {
 		return first;
 	}
 
+	public static ListNode findKthToTail2(ListNode head, int k) {
+		if (head == null || k < 1) {
+			return head;
+		}
+		ListNode tmp1 = head;
+		ListNode tmp2 = head;
+		while (k > 1) {
+			if (tmp2.next != null) {
+				tmp2 = tmp2.next;
+				k--;
+			} else {
+				return null;
+			}
+		}
+		while (tmp2.next != null) {
+			tmp1 = tmp1.next;
+			tmp2 = tmp2.next;
+		}
+		return tmp1;
+	}
+
 }
